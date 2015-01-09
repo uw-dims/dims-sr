@@ -296,6 +296,7 @@ in (i.e. no matter what view is being presented to the user). The current method
 is to have a link to "Settings" in the top navigation bar, which brings up a
 modal window where the user can change/toggle settings.
 
+
 Current available settings (with more to be added as needed):
 
 1. Anonymize
@@ -336,8 +337,19 @@ Current available settings (with more to be added as needed):
          crosscor queries as well. 
       #. Restrict to "admin" user type - this user
          would have knowledge of the infrastructure
-      
 
+
+Current view implementation
+```````````````````````````
+
+The following figure shows the current implementation of the settings modal window view.
+
+.. figure:: dashboard_images/changing_anonymization_setting.png
+   :alt: Changing Anonymization Setting
+   :width: 80%
+   :align: left
+
+Settings modal window - Changing Anonymization setting
 
 Messaging 
 ~~~~~~~~~
