@@ -6,6 +6,8 @@ DIMS System Requirements
 
 .. toctree::
    :maxdepth: 2
+   
+   dashboarduidesign
 
 
 Contact
