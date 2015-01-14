@@ -20,6 +20,9 @@ decided are TBD. Items to be added are TBA. Questions are asked where
 information/decisions are needed and alternative options are given when a course
 of action has not been determined.
 
+.. contents::
+   :depth: 3
+
 
 User Types 
 ----------
@@ -43,7 +46,7 @@ Views
 -----
 
 This section describes the "views" or "pages" available to each type of user,
-starting with the "Dashboard" view.
+starting with the "Dashboard" view. These views are based upon user worflows and  capabilities.
 
 Dashboard View 
 ~~~~~~~~~~~~~~
@@ -151,6 +154,52 @@ the system.
      users, modify user type, regenerate keys, etc. (see SRS 4.11)
 
 #. TBD…
+
+
+Navigation Bar 
+~~~~~~~~~~~~~~
+
+A fixed horizontal navigation bar is present on any view. At a minimum, it will
+contain the following when a user is logged in:
+
+#. Link to Dashboard view 
+#. Text indicating logged in user
+#. Logout link
+
+The current implementation also includes
+
+#. Link to open Messaging modal window
+#. Link to open Settings modal window
+#. Navigation menus - These may be modified or removed as required by revised
+   mockups (TBA)
+
+A non-logged in user will only see the text "DIMS" in the navigation bar - no
+links.
+
+
+Messaging Views 
+~~~~~~~~~~~~~~~
+
+Messaging involves two basic views:
+
+#. Modal window to start/stop messaging
+#. For each type of messaging, window to display messaging contents and to 
+   send content if the messaging type supports it.
+
+We currently support two types of messaging:
+
+#. Log monitor - monitors messages on the "logs" exchange. Receive only.
+#. Chat - Send and receive.
+
+While we currently only have one type of log monitoring (that of the "logs" 
+exchange), we may want to add more exchanges to monitor. Therefore, views for 
+log monitoring need to be able to support additional types of logs. (For 
+example, if the current view for log monitoring is adopted, additional
+logs could appear in "tabs". ) The modal window design also needs to be able
+to support addional logs to turn on/off.
+
+To view requirements for messaging, see the section "Messaging" in this 
+document.
 
 
 User Workflows
