@@ -1,7 +1,5 @@
-.. dimsdashboarduidesign:
+.. _dimsdashboarduidesign:
 
-
-=========================================
 DIMS Dashboard User Interface (UI) Design
 =========================================
 
