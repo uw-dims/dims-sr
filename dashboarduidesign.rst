@@ -14,6 +14,7 @@ users.
 This information in turn drives the creation of UI mockups (also included) which
 serve as the basis for the final design implementation. JIRA tickets (user
 stories and tasks) to perform the implementation are derived from this document.
+Where mockups are not available, screenshots are shown.
 
 This is a work-in-progress and will be updated frequently. Items still to be
 decided are TBD. Items to be added are TBA. Questions are asked where
@@ -22,6 +23,9 @@ of action has not been determined.
 
 .. contents::
    :depth: 3
+   
+.. sectnum::
+   :depth: 4
 
 
 User Types 
@@ -30,12 +34,12 @@ User Types
 DIMS Dashboard users can be divided into two broad groups: Users and
 administrators. Therefore we define two types of users:
 
-user 
+**user** 
    This is the prototypical user: Cyber-analyst, investigator, security
    professional, PRISEM participant, Ops-trust member, etc. A "user" does not 
    have access to "admin" views.
 
-admin
+**admin**
    Performs system administration functions on the DIMS system as a whole.
    Responsible for daily operations of the system, provisioning of machines and
    users, etc. An "admin" has access to "user" and "admin" views.
@@ -46,7 +50,7 @@ Views
 -----
 
 This section describes the "views" or "pages" available to each type of user,
-starting with the "Dashboard" view. These views are based upon user worflows and  capabilities.
+starting with the "Dashboard" view. These views are based upon user workflows and capabilities/functions needed by the user.
 
 Dashboard View 
 ~~~~~~~~~~~~~~
@@ -64,69 +68,140 @@ The dashboard view presented depends on the user type: "admin" or "user".
 User Dashboard View 
 ```````````````````
 
-The following are proposed content areas for the User Dashboard View. Each would
-contain some kind of relevant data pertaining to the content area or a graphic
+The following are proposed content areas for the User Dashboard View. Visually
+each panel/box would
+contain some kind of relevant data pertaining to the content area (could be
+a summary of some kind) or a static graphic image/design
 representative of the content area.
 
-#. Chat
+#. Chat - opens chat view
+#. Search/Query - opens query view
+#. Tickets - opens ticket view
+#. Saved Queries - opens the user's saved queries view
+#. Notifications - opens notifications view
+#. Wiki - goes to a wiki
+#. User Attributes - opens user attributes view (could also include profile)
+#. Associated Applications - goes to or activates (brings to front) associated
+   applications such as ops-trust portal, kibana, etc.
 
-   * Opens the chat view.
+Other possibilities include:
 
-#. Search/Query
+#. Last Activity - activates last activity view (last activity user was 
+   working on)
+#. Favorite(s) - user-specified content area(s)
 
-   * Opens the query view 
-   * In terms of the current implementation, this
-     could take the user to the current main page with the query (Magnifying
-     glass) view active.
+Details for areas follow. Each section presents (1) what happens when the user
+clicks the content area block ("action") and (2) what is displayed on 
+the content area block on the dashboard ("content").
 
-#. Tickets
+Chat
+::::
 
-   * Opens the ticket interface - view/create/etc. 
-   * Current implementation -
-     could take the user to the current main page with the ticket view active
+**Action**
+   Activates chat (if not already activated) and opens the chat window (view).
 
-#. User Saved Data/Queries
+**Content**
+   TBD. 
 
-   * Opens the interface (currently on the main page, user saved searches view)
-     to the user's saved searches/data
+Search/Query
+::::::::::::
 
-#. Notifications
+**Action**
+   Opens the "main" view and activates (makes visible) the query sub-view.
+   
+**Content**
+   TBD. 
+   
+Tickets
+:::::::
 
-   * Opens the interface (not currently implemented) which would list any
-     notifications for the user.
+**Action**
+   Opens the "main" view and activates (makes visible) the ticket sub-view. 
+      
+**Content**
+   TBD. 
 
-#. Wiki
+Saved Queries
+:::::::::::::
 
-   * Opens the wiki. Note: currently the wiki is part of ops-trust and can only
-     be accessed via the ops-trust portal. 
+**Action**
+   Opens the "main" view and activates (makes visible) the saved queries
+   sub-view. 
+      
+**Content**
+   TBD. 
+   
+Notifications
+:::::::::::::
 
-#. User Attributes/Profile
+**Action**
+   Opens the notifications view. Note that this view is still TBD.
+      
+**Content**
+   TBD. 
+   
+Wiki
+::::
 
-   * Opens the user attributes interface. This could also include User profile
-     information (currently only accessible via ops-trust) and the user
-     settings.
+**Action**
+   Opens the "wiki" view (wiki in ops-trust portal). 
+   
+   Note: currently the wiki is part of ops-trust and can only
+   be accessed via a link in the ops-trust portal. The user must be logged into 
+   the ops-trust portal and have opened a trust group. See more at wiki view
+   section.
+      
+**Content**
+   TBD. 
 
-#. Associated Applications - could have a separate content area/panel for each.
-   Ideas:
+User Attributes and/or Profile
+::::::::::::::::::::::::::::::
+
+Note: *User Attributes* specifically refers to the attributes referenced
+in DIMS-52 "Multiple Sets of Attributes." *User Profile* refers to information 
+associated with the user - full name, email, telephone, etc. *User Settings*
+refers to web settings saved by the user such as "anonymization on." We need
+to decide if these should be separate views, all in the same view, or will they 
+be subviews of the one view. See User Views later in this document.
+
+**Action**
+   Opens some kind of user view - more TBD.
+      
+**Content**
+   TBD.
+   
+Applications
+::::::::::::
+
+This would involve one content area per associated application.
+
+**Action**
+   Activates the application. Applications could include:
 
    * ops-trust portal 
    * Kibana  (is this needed for users or is it admin only?)
    * PRISEM portal
+      
+**Content**
+   TBD.
+   
+Last Activity
+:::::::::::::
 
+**Action**
+   Takes the user to the last activity the user was working on - this would
+   be one of the dashboard content areas
+      
+**Content**
+   TBD.
 
-Other possibilities, if they will significantly add to the user experience:
+Favorites
+:::::::::
 
-#. Last activity
-
-   * Takes the user to the last activity the user was working on (last Dashboard
-     content area/panel for example)
-
-#. Favorites
-
-   * Perhaps one or more "slots" could be configured where the user can save a
-     favorite view - a ticket he/she is working on for example. For a ticket,
-     for example, clicking on the box would take the user to the ticket 
-     interface with the ticket selected and visible.
+Perhaps one or more "slots" could be configured where the user can save a
+favorite view - a ticket he/she is working on for example. For a ticket,
+for example, clicking on the box would take the user to the ticket 
+interface with the ticket selected and visible.
 
 
 Admin Dashboard View 
@@ -153,7 +228,7 @@ the system.
    * Go to user administration view - need to be able to give/remove access to
      users, modify user type, regenerate keys, etc. (see SRS 4.11)
 
-#. TBD…
+#. More TBD…
 
 
 Navigation Bar 
@@ -180,7 +255,7 @@ links.
 Messaging Views 
 ~~~~~~~~~~~~~~~
 
-Messaging involves two basic views:
+Messaging involves two types of views:
 
 #. Modal window to start/stop messaging ("Messaging Control View")
 #. For each type of messaging, window to display messaging contents and to 
@@ -195,20 +270,81 @@ While we currently only have one type of log monitoring (that of the "logs"
 exchange), we may want to add more exchanges to monitor. Therefore, views for 
 log monitoring need to be able to support additional types of logs. (For 
 example, if the current view for log monitoring is adopted, additional
-logs could appear in "tabs". ) The modal window design also needs to be able
+logs could appear in "tabs".) The modal window design also needs to be able
 to support addional logs to turn on/off.
 
-To view requirements for messaging, see the section "Messaging" in this 
-document.
+Requirements for messaging:
+
+1. The user should be able to turn on and turn off display of the messages 
+2. The user should be able to minimize message windows 
+3. Message windows should be able to be invoked (started) from any view and 
+   should be visible on any view 
+4. When message windows are "closed," the data is not persisted to the UI. 
+5. When message windows are "minimized", the data is persisted and available 
+   when the user maximizes the windows. 
+6. The maximum number of lines of data (or
+   characters, etc) to save to the UI for a message window is XX (TBD) 
+7. Chat messages should display the sender name and the user's local time 
+8. Log messages display exactly as sent from the logs exchange
+
+.. note::
+   We need to decide if receiving log monitor messages is admin only
+   or are available to all users.
 
 Messaging Control View 
 ``````````````````````
+View where user can turn on/off messaging for each type of messaging supported.
+This is currently implemented as a modal window with buttons to toggle each
+supported messaging type and is activated via a link on the Navigation Bar.
+
+
+Chat View 
+`````````
+
+View where user can send and receive chat messages. This view is available
+(visible to the user) no matter what other view (page) the user is viewing.
+
+The chat view is a "window" or panel fixed
+to the bottom right side of the dashboard viewport and has a similar look
+and feel as a Facebook chat window. The chat window can be minimized by
+clicking the minimize link in the chat title bar. The chat window can be closed
+by clicking the close link (X) in the title bar. When minimized, received
+chat messages are still saved to the chat window. When closed, no messages
+are saved, and any prior contents are erased.
+
+   
+.. note::
+   This method of displaying the chat window (fixed to the bottom of the bottom
+   of the dashboard viewport) was chosen since it is simple and
+   provids a predictable location for the window, where it will display on 
+   any view (user changing views does not alter the chat window). This is
+   true of the log message window as well. 
+   
+   Another option
+   would be to open a message windows in a new, separate window (not attached 
+   to the current page). However, there are technical issues involved with this 
+   approach, having to do
+   with the Dashboard AngularJS application being able to control the extra
+   window. If this approach is desired, further investigation will be needed in
+   order to determine how to implement it. This approach does give the user more
+   control over the placement and size of the message windows.
 
 Log Monitor View 
 ````````````````
 
-Chat View 
-`````````
+View where messages from a "log" exchange are displayed. 
+
+The log monitor view is a "window" or panel fixed to the bottom of the
+dashboard viewport to the left of the chat window. It can be minimized by
+clicking the minimize link in the Log Monitor title bar. It can be closed by
+clicking the close link (X) in the title bar. When minimized, log messages
+are saved to the log monitor window. When closed, no messages are saved, and
+any prior contents are erased.
+
+If the capability to monitor additional logs are added, the monitor windows
+would be tabbed windows, each with a close and minimize button (link), and with
+a title identifying the type of log.
+
 
 User Views
 ~~~~~~~~~~
@@ -218,10 +354,99 @@ of "user" views:
 
 #. User settings - Persistent settings associated with the user that control
    what the user can do on the site
-#. User attributes - Sets of attributes that the system can use to inform me
-   of new data that matches those attributes, such as CIDR blocks, domain names,
-   etc.
-#. User profile - 
+#. User attributes - Sets of attributes that the system can use to notify
+   the user when new data is available that matches those attributes
+#. User profile - User information: full name, email address, phone number,
+   etc. 
+   
+Requirements:
+
+#. User should be able to view user settings.
+#. User should be able to change user settings.
+#. User should be able to view user attributes.
+#. User should be able to add a user attribute.
+#. User should be able to delete a user attribute.
+#. User should be able to modify and existing user attribute.
+#. User should be able to view user profile information.
+#. User should be able to modify user profile information.
+
+   
+.. note::
+   So, we need to determine how these elements should be presented in views.
+   Should they all be accessible via one view or should they be separate? How
+   will the user invoke the view(s)?
+
+
+The types of information for each type of user view are 
+further detailed in the sections below.
+
+User Settings
+`````````````
+
+The system can save settings that persist for each user. The
+first time a user logs in, the system creates a set of default settings for the
+user. 
+
+This view is currently invoked via a link on the Navigation bar called
+"Settings."  When the user clicks the "Settings" link, a
+modal window displays where the user can change/toggle settings.
+ 
+Current available settings (with more to be added as needed):
+
+1. Anonymize
+
+   * Toggle on/off 
+   * On indicates data queries will return anonymized data. 
+
+2. RPC Client Debug (will change this to "Prisem Client Debug")
+
+   * Toggle on/off 
+   * On indicates that Prisem clients will be called with
+     debug=true
+
+3. RPC Client Verbose (will change this to "Prisem Client Verbose")
+
+   * Toggle on/off 
+   * On indicates that Prisem clients will be called with
+     verbose=true
+
+4. Choose Cifbulk Queue
+
+   * This allows the user to specify a specific queue for the Prisem cifbulk
+     client to specify when querying cif database.
+     
+.. note::
+   * We should consider removing this or
+     restricting the queues to just the default and test queues, as any others
+     are not guaranteed to exist. This feature was a convenience when we were 
+     having trouble with cifbulk queries. We could also consider:
+
+      #. Let the user actually specify a queue directly (i.e. let the user enter
+         the queue name in a textfield in addition to being able to choose from 
+         a popup), however, this assumes a technical knowledge of the 
+         infrastructure that a user probably will not have. 
+      #. Restrict the above to a
+         "development" build (not "production"), so a developer doing
+         testing/debugging could specify a queue from the UI. For this case, we
+         might want to add this development capability to rwfind, anon, and
+         crosscor queries as well. 
+      #. Restrict to "admin" user type - this user
+         would have knowledge of the infrastructure
+
+User Attributes
+```````````````
+
+User attributes are indicators that the system can use to notify the user 
+when the system sees data that matches those attributes. They include IP
+addresses, CIDR blocks, domain names, hashes, etc.
+
+.. note::
+   Are the attributes displayed according to their "type" - types being
+   IP, cidr, etc. Does the user need to identify the type when adding/updating
+   and attribute? What are the types we will implement? 
+
+User Profile
+````````````
 
 User Workflows
 --------------
@@ -349,70 +574,63 @@ the better
 More TBA
 
 
-Functional Areas
-----------------
+Mockups
+-------
 
-User Settings
-~~~~~~~~~~~~~
+Where mockups are not available, 
+screenshots are shown.
 
-**Background:** The system can save settings that persist for each user. The
-first time a user logs in, the system creates a set of default settings for the
-user. The user is identified by username, which currently is the "ident" field
-in the ops-trust "members" table since that is serving as the repository of user
-identification data.
+Dashboard User View
+~~~~~~~~~~~~~~~~~~~
 
-**UI:** The user should be able to change the settings at any time while logged
-in (i.e. no matter what view is being presented to the user). The current method
-is to have a link to "Settings" in the top navigation bar, which brings up a
-modal window where the user can change/toggle settings.
+Dashboard Admin View
+~~~~~~~~~~~~~~~~~~~~
 
+Navigation Bar
+~~~~~~~~~~~~~~
 
-Current available settings (with more to be added as needed):
+Note: This is representative of the initial design which demoed a variety of
+capabilities. It may be superseded.
 
-1. Anonymize
+Messaging Control View
+~~~~~~~~~~~~~~~~~~~~~~
 
-   * Toggle on/off 
-   * On indicates data queries will return anonymized data. The
-     map file used for anonymization is the file located on the dashboard server
-     at /etc/ipgrep_networks.yml.
+.. image:: dashboard_images/messaging_modal.png
+   :alt: Messaging modal window
+   :width: 600px
+   :align: center
 
-2. RPC Client Debug (will change this to "Prisem Client Debug")
+Chat View
+~~~~~~~~~
 
-   * Toggle on/off 
-   * On indicates that Prisem clients will be called with
-     debug=true
+Chat window, maximized:
 
-3. RPC Client Verbose (will change this to "Prisem Client Verbose")
+.. image:: dashboard_images/maximized_chat_window.png
+   :alt: Chat window, maximized
+   :width: 600px
+   :align: center
+   
+Chat window with received message displayed:
 
-   * Toggle on/off 
-   * On indicates that Prisem clients will be called with
-     verbose=true
+.. image:: dashboard_images/chat_with_message.png
+   :alt: Chat window with message
+   :width: 300px
+   :align: center
+   
+Chat window, minimized:
 
-4. Choose Cifbulk Queue
+.. image:: dashboard_images/chat_minimized.png
+   :alt: Chat window, minimized
+   :width: 600px
+   :align: center
 
-   * This allows the user to specify a specific queue for the Prisem cifbulk
-     client to specify when querying cif * We should consider removing this or
-     restricting the queues to just the default and test queues, as any others
-     are not guaranteed to exist. This feature was a convenience when we were 
-     having trouble with cifbulk queries. We could also consider:
+Log Monitor View
+~~~~~~~~~~~~~~~~
 
-      #. Let the user actually specify a queue directly (i.e. let the user enter
-         the queue name in a textfield in addition to being able to choose from 
-         a popup), however, this assumes a technical knowledge of the 
-         infrastructure that a user probably will not have. 
-      #. Restrict the above to a
-         "development" build (not "production"), so a developer doing
-         testing/debugging could specify a queue from the UI. For this case, we
-         might want to add this development capability to rwfind, anon, and
-         crosscor queries as well. 
-      #. Restrict to "admin" user type - this user
-         would have knowledge of the infrastructure
+User Views
+~~~~~~~~~~
 
-
-Current view implementation
-```````````````````````````
-
-The following figure shows the current implementation of the settings modal window view.
+TBD. Currently implemented user settings modal window is shown.
 
 .. figure:: dashboard_images/changing_anonymization_setting.png
    :alt: Changing Anonymization Setting
@@ -421,51 +639,27 @@ The following figure shows the current implementation of the settings modal wind
 
 Settings modal window - Changing Anonymization setting
 
-Messaging 
+Main View 
 ~~~~~~~~~
 
-**Background:** The Dashboard UI has the ability to send and receive messages
-from RabbitMQ log exchanges (i.e. the publish/subscribe AMQP model) via the
-Dashboard server. The following operations currently exist:
+Query View
+~~~~~~~~~~
 
-1. Send and receive messages on the "chat" exchange 
-2. Receive messages from the "logs" exchange
+Ticket View
+~~~~~~~~~~~
 
-**UI:** The following are current requirements for the UI
+Saved Query View
+~~~~~~~~~~~~~~~~
 
-1. The user should be able to turn on and turn off display of the messages 
-2. The user should be able to minimize message windows 
-3. Message windows should be able to be invoked (started) from any view and 
-   should be visible on any view 
-4. When message windows are "closed," the data is not persisted to the UI. 
-5. When message windows are "minimized", the data is persisted and available 
-   when the user maximizes the windows. 
-6. The maximum number of lines of data (or
-   characters, etc) to save to the UI for a message window is XX (TBD) 
-7. Chat messages should display the sender name and the user's local time 
-8. Log messages display exactly as sent from the logs exchange
+Notifications View
+~~~~~~~~~~~~~~~~~~
 
-Note: When determining if any changes are needed to the current implementation,
-keep in mind that we may add more possible message types to the UI.
 
-Current Implementation: The message windows display fixed to the bottom of the
-dashboard viewport, similar to Facebook chat windows. The chat window is fixed
-to the bottom right side of the viewport, and the log monitor window displays to
-the right of chat. The message windows can be invoked by clicking the
-"Messaging" link in the top navigation bar, which brings up a modal window where
-the user can turn on/off the Log Monitor and/or Chat.  The message windows can
-also be "turned off" via close links (X) in the respective window. The message
-windows can be minimized by clicking the minimize link in the respective window.
 
-This method of displaying the windows was chosen since it was simple and
-provided a predictable location for the windows, where they would display on any
-view (user changing views does not alter the message windows). Another option
-would be to open the message windows in new windows (not attached to the current
-page), but there are technical issues involved with this approach, having to do
-with the Dashboard AngularJS application being able to control the extra
-windows. If this approach is desired, further investigation will be needed in
-order to determine how to implement it. This approach does give the user more
-control over the placement and size of the message windows.
+
+
+
+
 
 
 
