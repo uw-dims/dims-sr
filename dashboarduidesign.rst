@@ -70,11 +70,11 @@ representative of the content area.
 
 #. Chat
 
-   * Opens/views the chat window
+   * Opens the chat view.
 
 #. Search/Query
 
-   * Opens the query interface 
+   * Opens the query view 
    * In terms of the current implementation, this
      could take the user to the current main page with the query (Magnifying
      glass) view active.
@@ -182,7 +182,7 @@ Messaging Views
 
 Messaging involves two basic views:
 
-#. Modal window to start/stop messaging
+#. Modal window to start/stop messaging ("Messaging Control View")
 #. For each type of messaging, window to display messaging contents and to 
    send content if the messaging type supports it.
 
@@ -201,6 +201,27 @@ to support addional logs to turn on/off.
 To view requirements for messaging, see the section "Messaging" in this 
 document.
 
+Messaging Control View 
+``````````````````````
+
+Log Monitor View 
+````````````````
+
+Chat View 
+`````````
+
+User Views
+~~~~~~~~~~
+
+The following are elements that would be reached/modified via one or more types
+of "user" views:
+
+#. User settings - Persistent settings associated with the user that control
+   what the user can do on the site
+#. User attributes - Sets of attributes that the system can use to inform me
+   of new data that matches those attributes, such as CIDR blocks, domain names,
+   etc.
+#. User profile - 
 
 User Workflows
 --------------
