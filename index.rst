@@ -9,7 +9,6 @@ DIMS System Requirements
    :maxdepth: 2
    
    referenceddocs
-   dashboarduidesign
 
 
 Contact
