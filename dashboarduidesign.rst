@@ -19,13 +19,6 @@ decided are TBD. Items to be added are TBA. Questions are asked where
 information/decisions are needed and alternative options are given when a course
 of action has not been determined.
 
-.. contents::
-   :depth: 3
-   
-.. sectnum::
-   :depth: 4
-
-
 User Types 
 ----------
 
