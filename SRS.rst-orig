@@ -1,6 +1,4 @@
-.. This file was produced with the following command lines:
-   $ sed 's|<br/>||g' ~/Downloads/MIL-STD-498-templates-html-master/SRS.html > SRS.html
-   $ html2rest SRS.html > SRS.rst-orig
+
 
 
 1. Scope.
@@ -546,16 +544,16 @@ include:
 This paragraph shall contain:
 
 #. Traceability from each CSCI requirement in this specification to
-the system (or subsystem, if applicable) requirements it addresses.
-(Alternatively, this traceability may be provided by annotating each
-requirement in Section 3.) > Note: Each level of system refinement may
-result in requirements not directly traceable to higher-level
-requirements. For example, a system architectural design that creates
-multiple CSCIs may result in requirements about how the CSCIs will
-interface, even though these interfaces are not covered in system
-requirements. Such requirements may be traced to a general requirement
-such as "system implementation" or to the system design decisions that
-resulted in their generation. < li>
+   the system (or subsystem, if applicable) requirements it addresses.
+   (Alternatively, this traceability may be provided by annotating each
+   requirement in Section 3.) Note: Each level of system refinement may
+   result in requirements not directly traceable to higher-level
+   requirements. For example, a system architectural design that creates
+   multiple CSCIs may result in requirements about how the CSCIs will
+   interface, even though these interfaces are not covered in system
+   requirements. Such requirements may be traced to a general requirement
+   such as "system implementation" or to the system design decisions that
+   resulted in their generation.
 #. Traceability from each system (or subsystem, if applicable)
    requirement allocated to this CSCI to the CSCI requirements that
    address it. All system (subsystem) requirements allocated to this CSCI

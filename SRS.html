@@ -45,8 +45,8 @@
 <h3>3.3.x (Project unique identifier of interface).</h3>
 <p>This paragraph (beginning with 3.3.2) shall identify a CSCI external interface by project unique identifier, shall briefly identify the interfacing entities, and shall be divided into subparagraphs as needed to state the requirements imposed on the CSCI to achieve the interface.  Interface characteristics of the other entities involved in the interface shall be stated as assumptions or as "When [the entity not covered] does this, the CSCI shall...," not as requirements on the other entities.  This paragraph may reference other documents (such as data dictionaries, standards for communication protocols, and standards for user interfaces) in place of stating the information here.  The requirements shall include the following, as applicable, presented in any order suited to the requirements, and shall note any differences in these characteristics from the point of view of the interfacing entities (such as different expectations about the size, frequency, or other characteristics of data elements):
 <ol type="a">
-	<li>Priority that the CSCI must assign the interface</li><br/>
-    <li>Requirements on the type of interface (such as real-time data transfer, storage-and-retrieval of data, etc.) to be implemented</li><br/>
+	<li>Priority that the CSCI must assign the interface</li>
+    <li>Requirements on the type of interface (such as real-time data transfer, storage-and-retrieval of data, etc.) to be implemented</li>
     <li>
     Required characteristics of individual data elements that the CSCI must provide, store, send, access, receive, etc., such as:
     	<ol>
@@ -67,7 +67,7 @@
         <li>Security and privacy constraints</li>
         <li>Sources (setting/sending entities) and recipients (using/receiving entities)</li>
         </ol>
-    </li><br/>
+    </li>
     <li>Required characteristics of data element assemblies (records, messages, files, arrays, displays, reports, etc.) that the CSCI must provide, store, send, access, receive, etc., such as:
     	<ol>
         <li>Names/identifiers
@@ -86,7 +86,7 @@
         <li>Security and privacy constraints</li>
         <li>Security and privacy constraints</li>
         </ol>
-    </li><br/>
+    </li>
     <li>Required characteristics of communication methods that the CSCI must use for the interface, such as:
     	<ol>
         <li>Project-unique identifier(s)</li>
@@ -98,7 +98,7 @@
         <li>Transmission services, including priority and grade</li>
         <li>Safety/security/privacy considerations, such as encryption, user authentication, compartmentalization, and auditing</li>
         </ol>
-    </li><br/>
+    </li>
     <li>Required characteristics of protocols the CSCI must use for the interface, such as:
     	<ol>
         <li>Project-unique identifier(s)</li>
@@ -108,8 +108,8 @@
         <li>Synchronization, including connection establishment, maintenance, termination</li>
         <li>Status, identification, and any other reporting features</li>
         </ol>
-    </li><br/>
-    <li>Other required characteristics, such as physical compatibility of the interfacing entities (dimensions, tolerances, loads, plug compatibility, etc.), voltages, etc.</li><br/>
+    </li>
+    <li>Other required characteristics, such as physical compatibility of the interfacing entities (dimensions, tolerances, loads, plug compatibility, etc.), voltages, etc.</li>
 </ol>
 </p>
 
@@ -152,9 +152,9 @@
 <h2>3.12 Design and implementation constraints.</h2>
 <p>This paragraph shall specify the requirements, if any, that constrain the design and implementation of the CSCI.  These requirements may be specified by reference to appropriate commercial or military standards and specifications.  Examples include requirements concerning:
 <ol type="a">
-	<li>Use of a particular CSCI architecture or requirements on the architecture, such as required databases or other software units; use of standard, military, or existing components; or use of Government/acquirer-furnished property (equipment, information, or software)</li><br/>
-    <li>Use of particular design or implementation standards; use of particular data standards; use of a particular programming language</li><br/>
-    <li>Flexibility and expandability that must be provided to support anticipated areas of growth or changes in technology, threat, or mission</li><br/>
+	<li>Use of a particular CSCI architecture or requirements on the architecture, such as required databases or other software units; use of standard, military, or existing components; or use of Government/acquirer-furnished property (equipment, information, or software)</li>
+    <li>Use of particular design or implementation standards; use of particular data standards; use of a particular programming language</li>
+    <li>Flexibility and expandability that must be provided to support anticipated areas of growth or changes in technology, threat, or mission</li>
 </ol>
 </p>
 
@@ -179,11 +179,11 @@
 <h1>4. Qualification provisions.</h1>
 <p>This section shall define a set of qualification methods and shall specify for each requirement in Section 3 the method(s) to be used to ensure that the requirement has been met.  A table may be used to present this information, or each requirement in Section 3 may be annotated with the method(s) to be used.  Qualification methods may include:
 <ol type="a">
-	<li>Demonstration:  The operation of the CSCI, or a part of the CSCI, that relies on observable functional operation not requiring the use of instrumentation, special test equipment, or subsequent analysis.</li><br/>
-    <li>Test:  The operation of the CSCI, or a part of the CSCI, using instrumentation or other special test equipment to collect data for later analysis.</li><br/>
-    <li>Analysis:  The processing of accumulated data obtained from other qualification methods.  Examples are reduction, interpretation, or extrapolation of test results.</li><br/>
-    <li>Inspection:  The visual examination of CSCI code, documentation, etc.</li><br/>
-    <li>Special qualification methods:  Any special qualification methods for the CSCI, such as special tools, techniques, procedures, facilities, and acceptance limits.</li><br/> 
+	<li>Demonstration:  The operation of the CSCI, or a part of the CSCI, that relies on observable functional operation not requiring the use of instrumentation, special test equipment, or subsequent analysis.</li>
+    <li>Test:  The operation of the CSCI, or a part of the CSCI, using instrumentation or other special test equipment to collect data for later analysis.</li>
+    <li>Analysis:  The processing of accumulated data obtained from other qualification methods.  Examples are reduction, interpretation, or extrapolation of test results.</li>
+    <li>Inspection:  The visual examination of CSCI code, documentation, etc.</li>
+    <li>Special qualification methods:  Any special qualification methods for the CSCI, such as special tools, techniques, procedures, facilities, and acceptance limits.</li> 
 </ol>
 </p>
 
@@ -191,9 +191,9 @@
 <p>This paragraph shall contain:
 <ol type="a">
 	<li>Traceability from each CSCI requirement in this specification to the system (or subsystem, if applicable) requirements it addresses.  (Alternatively, this traceability may be provided by annotating each requirement in Section 3.) 
-    <br/><br/>
-    Note:  Each level of system refinement may result in requirements not directly traceable to higher-level requirements.  For example, a system architectural design that creates multiple CSCIs may result in requirements about how the CSCIs will interface, even though these interfaces are not covered in system requirements.  Such requirements may be traced to a general requirement such as "system implementation" or to the system design decisions that resulted in their generation. </li><br/>
-    <li>Traceability from each system (or subsystem, if applicable) requirement allocated to this CSCI to the CSCI requirements that address it.  All system (subsystem) requirements allocated to this CSCI shall be accounted for.  Those that trace to CSCI requirements contained in IRSs shall reference those IRSs.</li><br/>
+    
+    Note:  Each level of system refinement may result in requirements not directly traceable to higher-level requirements.  For example, a system architectural design that creates multiple CSCIs may result in requirements about how the CSCIs will interface, even though these interfaces are not covered in system requirements.  Such requirements may be traced to a general requirement such as "system implementation" or to the system design decisions that resulted in their generation. </li>
+    <li>Traceability from each system (or subsystem, if applicable) requirement allocated to this CSCI to the CSCI requirements that address it.  All system (subsystem) requirements allocated to this CSCI shall be accounted for.  Those that trace to CSCI requirements contained in IRSs shall reference those IRSs.</li>
 </ol>
 </p>
 
