@@ -3,7 +3,7 @@
 Requirements
 ============
 
-.. note:: TBD
+.. todo::
 
     This section shall be divided into the following paragraphs to specify the
     CSCI requirements, that is, those characteristics of the CSCI that are
@@ -22,12 +22,14 @@ Requirements
     state. If a given requirement fits into more than one paragraph, it may be
     stated once and referenced from the other paragraphs.
 
+..
+
 .. _statesandmodes:
 
 Required states and modes
 -------------------------
 
-.. note:: TBD
+.. todo::
 
     If the CSCI is required to operate in more than one state or mode having
     requirements distinct from other states or modes, this paragraph shall
@@ -44,12 +46,14 @@ Required states and modes
     appendix referenced from this paragraph, or by annotation of the
     requirements in the paragraphs where they appear.
 
+..
+
 .. _capabilityrequirements:
 
 CSCI capability requirements
 ----------------------------
 
-.. note:: TBD
+.. todo::
 
     This paragraph shall be divided into subparagraphs to itemize the
     requirements associated with each capability of the CSCI. A "capability" is
@@ -57,12 +61,14 @@ CSCI capability requirements
     replaced with "function," "subject," "object," or other term useful for
     presenting the requirements.
 
+..
+
 .. _capabilityA:
 
 (CSCI capability)
 ~~~~~~~~~~~~~~~~~
 
-.. note:: TBD
+.. todo::
 
     This paragraph shall identify a required CSCI capability and shall itemize
     the requirements associated with the capability. If the capability can be
@@ -80,24 +86,28 @@ CSCI capability requirements
     to be considered when specifying requirements regarding inputs the CSCI
     must accept and outputs it must produce.
 
+..
+
 .. _externalrequirements:
 
 CSCI external interface requirements
 ------------------------------------
 
-.. note:: TBD
+.. todo::
 
     This paragraph shall be divided into subparagraphs to specify the
     requirements, if any, for the CSCI's external interfaces. This paragraph
     may reference one or more Interface Requirements Specifications (IRSs) or
     other documents containing these requirements.
 
+..
+
 .. _interfaceid:
 
-Interface identification and diagrams.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Interface identification and diagrams
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. note:: TBD
+.. todo::
 
     This paragraph shall identify the required external interfaces of the CSCI
     (that is, relationships with other entities that involve sharing, providing
@@ -110,12 +120,14 @@ Interface identification and diagrams.
     developed or modified (thus having interface requirements imposed on them).
     One or more interface diagrams shall be provided to depict the interfaces.
 
+..
+
 .. _interfacepuid:
 
 (Project unique identifier of interface)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. note:: TBD
+.. todo::
 
     This paragraph (beginning with 3.3.2) shall identify a CSCI external
     interface by project unique identifier, shall briefly identify the
@@ -219,13 +231,14 @@ Interface identification and diagrams.
        the interfacing entities (dimensions, tolerances, loads, plug
        compatibility, etc.), voltages, etc.
 
+..
 
 .. _internalinterfacereqs:
 
 CSCI internal interface requirements
 ------------------------------------
 
-.. note:: TBD
+.. todo::
 
     This paragraph shall specify the requirements, if any, imposed on
     interfaces internal to the CSCI. If all internal interfaces are left to the
@@ -233,12 +246,14 @@ CSCI internal interface requirements
     imposed, paragraph 3.3 of this DID provides a list of topics to be
     considered.
 
+..
+
 .. _internaldatareqs:
 
 CSCI internal data requirements
 -------------------------------
 
-.. note:: TBD
+.. todo::
 
     This paragraph shall specify the requirements, if any, imposed on data
     internal to the CSCI. Included shall be requirements, if any, on databases
@@ -247,12 +262,14 @@ CSCI internal data requirements
     requirements are to be imposed, paragraphs 3.3.x.c and 3.3.x.d of this DID
     provide a list of topics to be considered.
 
+..
+
 .. _adaptationreqs:
 
 Adaptation requirements
 -----------------------
 
-.. note:: TBD
+.. todo::
 
     This paragraph shall specify the requirements, if any, concerning
     installation-dependent data to be provided by the CSCI (such as site-
@@ -261,12 +278,14 @@ Adaptation requirements
     according to operational needs (such as parameters indicating
     operation-dependent targeting constants or data recording).
 
+..
+
 .. _safetyreqs:
 
 Safety requirements
 -------------------
 
-.. note:: TBD
+.. todo::
 
     This paragraph shall specify the CSCI requirements, if any, concerned with
     preventing or minimizing unintended hazards to personnel, property, and the
@@ -278,12 +297,14 @@ Safety requirements
     prevention of inadvertent detonation and compliance with nuclear safety
     rules.
 
+..
+
 .. _securityreqs:
 
 Security and privacy requirements
 ---------------------------------
 
-.. note:: TBD
+.. todo::
 
     This paragraph shall specify the CSCI requirements, if any, concerned with
     maintaining security and privacy. These requirements shall include, as
@@ -294,12 +315,14 @@ Security and privacy requirements
     security/privacy accountability the CSCI must provide, and the criteria
     that must be met for security/privacy certification/accreditation.
 
+..
+
 .. _environmentreqs:
 
 CSCI environment requirements
 -----------------------------
 
-.. note:: TBD
+.. todo::
 
     This paragraph shall specify the requirements, if any, regarding the
     environment in which the CSCI must operate. Examples include the computer
@@ -307,21 +330,25 @@ CSCI environment requirements
     requirements concerning computer resources are given in the next
     paragraph.)
 
+..
+
 .. _compresourcereqs:
 
 Computer resource requirements
 ------------------------------
 
-.. note:: TBD
+.. todo::
 
     This paragraph shall be divided into the following subparagraphs.
+
+..
 
 .. _comphardwarereqs:
 
 Computer hardware requirements
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. note:: TBD
+.. todo::
 
     This paragraph shall specify the requirements, if any, regarding computer
     hardware that must be used by the CSCI. The requirements shall include, as
@@ -330,12 +357,14 @@ Computer hardware requirements
     auxiliary storage, communications/network equipment, and other required
     equipment.
 
+..
+
 .. _compresrouceutilizationreqs:
 
 Computer hardware resource utilization requirements
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. note:: TBD
+.. todo::
 
     This paragraph shall specify the requirements, if any, on the CSCI's
     computer hardware resource utilization, such as maximum allowable use of
@@ -345,12 +374,14 @@ Computer hardware resource utilization requirements
     capacity of each computer hardware resource) shall include the conditions,
     if any, under which the resource utilization is to be measured.
 
+..
+
 .. _compsoftwarereqs:
 
 Computer software requirements
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. note:: TBD
+.. todo::
 
     This paragraph shall specify the requirements, if any, regarding computer
     software that must be used by, or incorporated into, the CSCI. Examples
@@ -359,12 +390,14 @@ Computer software requirements
     software, and manufacturing software. The correct nomenclature, version,
     and documentation references of each such software item shall be provided.
 
+..
+
 .. _compcommsreqs:
 
 Computer communications requirements
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. note:: TBD
+.. todo::
 
     This paragraph shall specify the additional requirements, if any,
     concerning the computer communications that must be used by the CSCI.
@@ -374,12 +407,14 @@ Computer communications requirements
     transmitted/received; time boundaries for transmission/ reception/response;
     peak volumes of data; and diagnostic features.
 
+..
+
 .. _swqualityfactors:
 
 Software quality factors
 ------------------------
 
-.. note:: TBD
+.. todo::
 
     This paragraph shall specify the CSCI requirements, if any, concerned with
     software quality factors identified in the contract or derived from a
@@ -394,12 +429,14 @@ Software quality factors
     (the ability to be easily and thoroughly tested), usability (the ability to
     be easily learned and used), and other attributes.
 
+..
+
 .. _designcontraints:
 
 Design and implementation constraints
 -------------------------------------
 
-.. note:: TBD
+.. todo::
 
     This paragraph shall specify the requirements, if any, that constrain the
     design and implementation of the CSCI. These requirements may be specified
@@ -416,13 +453,14 @@ Design and implementation constraints
        anticipated areas of growth or changes in technology, threat, or
        mission
 
+..
 
 .. _personnelreqs:
 
 Personnel-related requirements
 ------------------------------
 
-.. note:: TBD
+.. todo::
 
     This paragraph shall specify the CSCI requirements, if any, included to
     accommodate the number, skill levels, duty cycles, training needs, or other
@@ -437,22 +475,26 @@ Personnel-related requirements
     of error messages, physical placement of critical indicators or keys, and
     use of auditory signals.
 
+..
+
 .. _trainingreqs:
 
 Training-related requirements
 -----------------------------
 
-.. note:: TBD
+.. todo::
 
     This paragraph shall specify the CSCI requirements, if any, pertaining to
     training. Examples include training software to be included in the CSCI.
+
+..
 
 .. _logisticsreqs:
 
 Logistics-related requirements
 ------------------------------
 
-.. note:: TBD
+.. todo::
 
     This paragraph shall specify the CSCI requirements, if any, concerned with
     logistics considerations. These considerations may include: system
@@ -460,34 +502,40 @@ Logistics-related requirements
     requirements, impact on existing facilities, and impact on existing
     equipment.
 
+..
+
 .. _otherreqs:
 
 Other requirements
 ------------------
 
-.. note:: TBD
+.. todo::
 
     This paragraph shall specify additional CSCI requirements, if any, not
     covered in the previous paragraphs.
+
+..
 
 .. _packagingreqs:
 
 Packaging requirements
 ----------------------
 
-.. note:: TBD
+.. todo::
 
     This section shall specify the requirements, if any, for packaging,
     labeling, and handling the CSCI for delivery (for example, delivery on 8
     track magnetic tape labelled and packaged in a certain way).  Applicable
     military specifications and standards may be referenced if appropriate.
 
+..
+
 .. _precedenceofreqs:
 
 Precedence and criticality of requirements
 ------------------------------------------
 
-.. note:: TBD
+.. todo::
 
     This paragraph shall specify, if applicable, the order of precedence,
     criticality, or assigned weights indicating the relative importance of the
@@ -495,4 +543,6 @@ Precedence and criticality of requirements
     requirements deemed critical to safety, to security, or to privacy for
     purposes of singling them out for special treatment. If all requirements
     have equal weight, this paragraph shall so state.
+
+..
 

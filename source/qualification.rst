@@ -3,7 +3,7 @@
 Qualification provisions
 ========================
 
-.. note:: TBD
+.. todo::
 
     This section shall define a set of qualification methods and shall specify
     for each requirement in Section :ref:`requirements` the method(s) to be
@@ -26,4 +26,6 @@ Qualification provisions
     #. Special qualification methods: Any special qualification methods
        for the CSCI, such as special tools, techniques, procedures,
        facilities, and acceptance limits.
+
+..
 

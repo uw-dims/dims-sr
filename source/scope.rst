@@ -3,30 +3,32 @@
 Scope
 =====
 
-.. note:: TBD
+.. todo::
 
     This section shall be divided into the following paragraphs.
 
+..
 
 .. _identification:
 
 Identification
 --------------
 
-.. note:: TBD
+.. todo::
 
     This paragraph shall contain a full identification of the system and the
     software to which this document applies, including, as applicable,
     identification number(s), title(s), abbreviation(s), version number(s), and
     release number(s).
 
+..
 
 .. _systemoverview:
 
 System overview
 ---------------
 
-.. note:: TBD
+.. todo::
 
     This paragraph shall briefly state the purpose of the system and the
     software to which this document applies. It shall describe the general
@@ -35,14 +37,18 @@ System overview
     acquirer, user, developer, and support agencies; identify current and
     planned operating sites; and list other relevant documents.
 
+..
+
 .. _documentoverview:
 
 Document overview
 -----------------
 
-.. note:: TBD
+.. todo::
 
     This paragraph shall summarize the purpose and contents of this document
     and shall describe any security or privacy considerations associated with
     its use.
+
+..
 

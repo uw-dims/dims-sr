@@ -3,7 +3,7 @@
 Requirements traceability
 =========================
 
-.. note:: TBD
+.. todo::
 
     This paragraph shall contain:
 
@@ -28,4 +28,4 @@ Requirements traceability
        shall be accounted for. Those that trace to CSCI requirements
        contained in IRSs shall reference those IRSs.
 
-
+..
