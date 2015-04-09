@@ -54,7 +54,8 @@ CSCI capability requirements
 ----------------------------
 
 The DIMS system is divided into the following high-level CSCI sets,
-per the acquisition contract.
+per the acquisition contract referenced in Sections :ref:`systemoverview`
+and :ref:`referenceddocs`.
 
 ================================ ========= =============
 CSCI                             Label     Contract Item
