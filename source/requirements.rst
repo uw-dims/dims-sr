@@ -53,15 +53,21 @@ Required states and modes
 CSCI capability requirements
 ----------------------------
 
-.. todo::
+The DIMS system is divided into the following high-level CSCI sets,
+per the acquisition contract.
 
-    This paragraph shall be divided into subparagraphs to itemize the
-    requirements associated with each capability of the CSCI. A "capability" is
-    defined as a group of related requirements. The word "capability" may be
-    replaced with "function," "subject," "object," or other term useful for
-    presenting the requirements.
+================================ ========= =============
+CSCI                             Label     Contract Item
+================================ ========= =============
+Backend data stores              BDS       C.3.1.1
+Dashboard web application        DWA       C.3.1.1
+Data Integration and User Tools  DIUT      C.3.1.2
+Vertical/Lateral Info. Sharing   VLIS      C.3.1.3
+================================ ========= =============
 
-..
+This subsection is divided into subparagraphs to itemize the
+requirements associated with each capability of these CSCI sets.
+Each capability is labelled with its specific CSCI
 
 .. _capabilityA:
 
