@@ -12,7 +12,6 @@ DIMS System Requirements
    referenceddocs
    requirements
    qualification
-   traceability
    notes
    license
    appendices
