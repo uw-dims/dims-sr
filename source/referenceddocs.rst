@@ -35,9 +35,9 @@ N. Beebe and J. G. Clark. A hierarchical, objectives-based framework for the dig
 
 Bluehat1. New MAPP Initiatives, July 2013. BlueHat Blog. http://blogs.technet.com/b/bluehat/archive/2013/07/29/new-mapp-initiatives.aspx 
 
-J. R. Boyd (Col.). Boyd’s OODA “Loop” From “The Essence of Winning and Losing”, 2008. Available at http://www.d-n-i.net/fcs/ppt/boyds_ooda_loop.ppt
+J. R. Boyd (Col.). Boyd’s OODA "Loop" From "The Essence of Winning and Losing", 2008. Available at http://www.d-n-i.net/fcs/ppt/boyds_ooda_loop.ppt
 
-S. O ́. Ciardhua ́in. An Extended Model of Cybercrime Investigations. International Journal of Digital Evidence, 3(1), Summer 2004. http://www.utica.edu/academic/institutes/ecii/publications/articles/A0B70121-FD6C-3DBA-0EA5C3E93CC575FA.pdf 
+S. O. Ciardhuain. An Extended Model of Cybercrime Investigations. International Journal of Digital Evidence, 3(1), Summer 2004. http://www.utica.edu/academic/institutes/ecii/publications/articles/A0B70121-FD6C-3DBA-0EA5C3E93CC575FA.pdf 
 
 D. Dittrich. PRISEM Analyst’s Handbook, December 2013.
 
@@ -45,7 +45,7 @@ D. Dittrich. PRISEM System Administration Handbook, December 2013.
 
 D. Dittrich. Advanced Incident Response Capabilities Supporting Collaborative and Cooperative Responses. Unpublished manuscript, April 2007.
 
-D. Dittrich. On Developing Tomorrow’s “Cyber Warriors”. In Proceedings of the 12th Colloquium for Information Systems Security Education, June 2008. http://staff.washington.edu/dittrich/misc/cisse2008-dittrich.pdf 
+D. Dittrich. On Developing Tomorrow’s "Cyber Warriors". In Proceedings of the 12th Colloquium for Information Systems Security Education, June 2008. http://staff.washington.edu/dittrich/misc/cisse2008-dittrich.pdf 
 
 D. Dittrich. On the Development of Computer Network Attack Capabilities. Unpublished manuscript, February 2008. This work was performed for the National Research Council under agreement D-235- DEPS-2007-001.
 
@@ -61,7 +61,7 @@ M. Hamilton and D. Dittrich. An overview of the Public Regional Information Secu
 
 E. Hutchins, M. Cloppert, and R. Amin. Intelligence-Driven Computer Network Defense Informed by Analysis of Adversary Campaigns and Intrusion Kill Chains. In 6th Annual International Conference on Information Warfare and Security. Lockheed Martin Corporation, December 2011. http://www.lockheedmartin.com/content/dam/lockheed/data/corporate/documents/LM-White-Paper-Intel-Driven-Defense.pdf
 
-H. Khurana, J. Basney, M. Bakht, M. Freemon, V. Welch, and R. Butler. Palantir: A Framework for Collaborative Incident Response and Investigation. In IDtrust ’09: Proceedings of the 8th Symposium on Identity and Trust on the Internet, pages 38–51, New York, NY, USA, April 2009. ACM. http://middleware.internet2.edu/idtrust/2009/papers/05-khurana-palantir.pdf 
+H. Khurana, J. Basney, M. Bakht, M. Freemon, V. Welch, and R. Butler. Palantir: A Framework for Collaborative Incident Response and Investigation. In IDtrust '09: Proceedings of the 8th Symposium on Identity and Trust on the Internet, pages 38–51, New York, NY, USA, April 2009. ACM. http://middleware.internet2.edu/idtrust/2009/papers/05-khurana-palantir.pdf 
 
 R. S. C. Ieong. FORZA - Digital forensics investigation framework that incorporate legal issues. Digital Investigation, 3(Supplement-1):29–36, 2006. http://www.dfrws.org/2006/proceedings/4-Ieong.pdf 
 
