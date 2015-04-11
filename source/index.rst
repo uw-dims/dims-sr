@@ -1,5 +1,7 @@
 .. DIMS System Requirements documentation master file.
 
+.. _dimssystemrequirements:
+
 ========================
 DIMS System Requirements
 ========================
