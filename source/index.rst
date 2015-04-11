@@ -2,9 +2,9 @@
 
 .. _dimssystemrequirements:
 
-========================
-DIMS System Requirements
-========================
+====================================
+DIMS System Requirements v |version|
+====================================
 
 .. toctree::
    :numbered:
