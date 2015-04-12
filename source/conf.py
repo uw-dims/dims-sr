@@ -347,5 +347,9 @@ epub_exclude_files = ['search.html']
 intersphinx_cache_limit = -1   # days to keep the cached inventories (0 == forever)
 intersphinx_mapping = {
         'dimsocd': ('http://u12-dev-svr-1.prisem.washington.edu:8080/docs/develop/html/dims-ocd',
-                    ('../../dims-ocd/build/html/objects.inv',None))
+                    ('../../dims-ocd/build/html/objects.inv',None)),
+        'dimsad': ('http://u12-dev-svr-1.prisem.washington.edu:8080/docs/develop/html/dims-ad',
+                    ('../../dims-ad/build/html/objects.inv',None)),
+        'dimstp': ('http://u12-dev-svr-1.prisem.washington.edu:8080/docs/develop/html/dims-tp',
+                    ('../../dims-tp/build/html/objects.inv',None))
 }
