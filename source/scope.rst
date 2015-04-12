@@ -8,7 +8,7 @@ Scope
 Identification
 --------------
 
-This System Requirements document (version |version|) describes
+This System Requirements document (version |release|) describes
 the high-level requirements for designing and implementing
 the Distributed Incident Management System (DIMS).
 
