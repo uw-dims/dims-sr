@@ -3,7 +3,7 @@
 .. _dimssystemrequirements:
 
 ====================================
-DIMS System Requirements v |version|
+DIMS System Requirements v |release|
 ====================================
 
 .. toctree::
