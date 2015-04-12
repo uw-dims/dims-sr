@@ -3,15 +3,8 @@
 Referenced Documents
 ====================
 
-This document is structured on `MIL-STD-498`_, described at `A forgotten military
-standard that saves weeks of work (by providing free project management
-templates)`_, by Kristof Kovacs. Specifically, this document is modelled on
-`SSS.html`_.
-
 The following documents describe the DIMS project and provide background
 material related to tasking.
-
-#. :ref:`dimssr:dimssystemrequirements`
 
 #. :ref:`dimsocd:dimsoperationalconceptdescription`
 
@@ -80,10 +73,4 @@ The Mitre Corporation. Standarizing Cyber Threat Intelligence Information with t
 
 C. Richards. Briefings - Colonel John R. Boyd, USAF, November 2009. http://www.ausairpower.net/APA-Boyd-Papers.html
 
-
-
 ..
-
-.. _MIL-STD-498: http://en.wikipedia.org/wiki/MIL-STD-498
-.. _A forgotten military standard that saves weeks of work (by providing free project management templates): http://kkovacs.eu/free-project-management-template-mil-std-498
-.. _SSS.html: http://kkovacs.eu/stuff/MIL-STD-498-templates-html/SSS.html
