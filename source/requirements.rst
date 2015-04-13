@@ -252,30 +252,15 @@ be easier to identify new unknown records that require analytic scrutiny."
 DWA User Story 5
 ^^^^^^^^^^^^^^^^
 
-"As a user of the system, I would like to see the status of any asynchronous
-queries or report generation requests I have made. It is reasonable for a
-search through the entire history of billions of events to take some time to
-complete, but I would like to be able to tell approximately how long I will
-have to wait. Ideally, the system would keep track of previous requests, the
-time span and complexity of filtering applied, and to provide a time estimate
-when a new query is being formulated so as to guide me in deciding what I
-really need to ask for to get an answer in the time frame I am faced with at
-the moment."
-
-.. _dwauserstory6:
-
-DWA User Story 6
-^^^^^^^^^^^^^^^^
-
 "As an {analyst, security operator}, I would like to have links to detailed
 analyses and reports that are available in public sources when a query I have
 made results in identifying known malware or malicious actors. This way I can
 more quickly come up to speed on what is (or is not) known about the threat
 behind the indicators or observables I am dealing with."
 
-.. _dwauserstory7:
+.. _dwauserstory6:
 
-DWA User Story 7
+DWA User Story 6
 ^^^^^^^^^^^^^^^^
 
 "As a {system administrator, security operator, network operator}, I would like
@@ -485,6 +470,21 @@ and information passed along to federal law enforcement, the updated annotated
 body of data can then be assembled into a SITREP (using a 'break' or 'step'
 reporting format, including both cleartext and anonymized versions for sharing
 with outside groups) and passed along with little added effort."
+
+.. _diutuserstory8:
+
+DIUT User Story 8
+^^^^^^^^^^^^^^^^^
+
+"As a user of the system, I would like to see the status of any asynchronous
+queries or report generation requests I have made. It is reasonable for a
+search through the entire history of billions of events to take some time to
+complete, but I would like to be able to tell approximately how long I will
+have to wait. Ideally, the system would keep track of previous requests, the
+time span and complexity of filtering applied, and to provide a time estimate
+when a new query is being formulated so as to guide me in deciding what I
+really need to ask for to get an answer in the time frame I am faced with at
+the moment."
 
 
 .. _vliscsci:
