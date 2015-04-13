@@ -17,17 +17,6 @@ the Distributed Incident Management System (DIMS).
 System overview
 ---------------
 
-.. todo::
-
-    This paragraph shall briefly state the purpose of the system and the
-    software to which this document applies. It shall describe the general
-    nature of the system and software; summarize the history of system
-    development, operation, and maintenance; identify the project sponsor,
-    acquirer, user, developer, and support agencies; identify current and
-    planned operating sites; and list other relevant documents.
-
-..
-
 DIMS is funded by the Department of Homeland Security under contract HSHQDC-
 13-C-B0013. For more information, see the document, "System Requirements and
 Concept of Operations for From Local to Gobal Awareness: A Distributed Incident
