@@ -163,8 +163,10 @@ Dashboard Web Application CSCI - (DWA)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Dashboard Web Application, also referred to as the DIMS Dashboard, 
-consists of web application server ("DWA Server") and 
-client ("DWA Client") components.
+provides a multi-faceted user interface and data visualization and
+analytic tools to integrate data from many sources and facilitate 
+trusted information sharing. The following subsections contain the
+user stories which describe the Dashboard Web Application requirements.
 
 .. todo::
 
@@ -270,6 +272,23 @@ assets that have been identified by the system, but to also give them
 information about what they need to do, in what order they should take steps,
 and when/how to preserve evidence in the event that there is criminal
 investigation ongoing."
+
+.. _dwauserstory7:
+
+DWA User Story 7
+^^^^^^^^^^^^^^^^
+
+"As an {analyst, security operator, investigator, network operator, system
+administrator}, I would like to be able to have access to DIMS functions
+via an intuitive web user interface."
+
+.. _dwauserstory8:
+
+DWA User Story 8
+^^^^^^^^^^^^^^^^
+
+"As a system administratory, I want the DIMS Dashboard to report information
+upon system startup and at periodic intervals that indicate operational status."
 
 
 .. _diutcsci:
