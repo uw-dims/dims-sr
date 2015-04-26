@@ -150,7 +150,7 @@ processors, the system can retrieve the saved search results related to the
 search hash and present them to the user. This allows the system to appear to
 function as normal, but without having to fill the databases with fake data.
 (This also allows a production system to be used in demonstration mode without
-polluting the production databases.
+polluting the production databases.)
 
 When done using demonstration mode, an additional option to save or delete any
 saved files should be supported to simulate multi-session and multi-user
