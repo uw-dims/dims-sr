@@ -59,6 +59,116 @@ Required states and modes
 
 ..
 
+.. _modetoggles:
+
+Mode toggles
+~~~~~~~~~~~~
+
+Modes described in this section can be be toggled **on** or **off** from the
+user dashboard interface. When toggeled, DIMS subsystems will either be made
+aware of the change (e.g., through the AMQP message bus, by monitoring a
+distributed file system path, or by checking for the presense of a flag
+indicating the state of the toggle on starteup). If notification of the change
+is not made (in a "push" fashion), DIMS subsystems will need to actively poll
+for the change.
+
+Since DIMS is designed to accumulate event logs, this is just a variation of
+the existing event log collection mechanisms built into DIMS. Test and/or debug
+logs will be tagged so as to separate them from the security event logs. A
+mechanism to purge logs that are no longer necessary should be supported.
+(This may be an optional setting when toggles are turned **off**.)
+
+.. _testmode:
+
+Test Mode
+~~~~~~~~~
+
+The DIMS system shall be designed to support a test mode that generates
+information useful for tests at the system level as described in the
+DIMS Test Plan, section :ref:`dimstp:testlevels`.
+
+.. todo::
+
+   Expand on what this mode should do.
+
+..
+
+.. _debugmode:
+
+Debug Mode
+~~~~~~~~~~
+
+The DIMS system shall be designed to support a debugging mode that allows
+generation of increasingly verbose logs that will assist in debugging.
+
+.. todo::
+
+   Show example of what this kind of output looks like from the PRISEM
+   utilities.
+
+..
+
+
+.. _demomode:
+
+Demonstration Mode
+~~~~~~~~~~~~~~~~~~
+
+In order to demonstrate a live instance of the DIMS system, without exposing
+any sensitive information it may contain, the DIMS system should support a
+demonstration mode that loads specially prepared **demonstration**
+data. This data may be fabricated, manually anonymized and/or collected
+from honeypot systems that are outside of any sensitive network blocks.
+This mode will also be useful for teaching students how to become analysts.
+
+During normal use of the DIMS system with live data and anonymization turned
+on, the user may chose to save interim search results or other analysis
+products from the data processing stream to a separate storage location
+for use in demonstration mode. This should include the ability to export
+all of the data in a single archive file for simplicity in building a
+library of demonstration data. This data can then be made available
+along with the DIMS software and deployment utilities so someone can
+easily bring up a demonstration instance with little or no manual
+intervention.
+
+.. note::
+
+   For an example of what this would look like, see how MozDef or GRR work by
+   building and running their respective Docker images as described
+   in their documentation. DIMS will model these projects in production
+   of a simple demo-mode deployment.
+
+..
+
+When in demonstration mode, the system should take the set of search parameters
+that are given to the user interface and generate a hash to save with the
+results. When in debug mode later, the set of search hashes can be used to
+either pre-populate the user interface, or just be used to compare with later
+searches done in Demonstration mode. When it is recognized that a pre-recorded
+search is being initiated, rather than send the paramters off to search
+processors, the system can retrieve the saved search results related to the
+search hash and present them to the user. This allows the system to appear to
+function as normal, but without having to fill the databases with fake data.
+(This also allows a production system to be used in demonstration mode without
+polluting the production databases.
+
+When done using demonstration mode, an additional option to save or delete any
+saved files should be supported to simulate multi-session and multi-user
+use of DIMS. When selecting deletion, there are two sub-states:
+
+#. Selecting **clean all** will clean out all of the demonstration data and
+   intermediary results, allowing a production system to be completely
+   cleaned of any demostration related data;
+
+#. Selecting **clean temporary files** only deletes the intermediary saved
+   results, not the original demonstration data. This resets the demonstration
+   back to the start for predictable repetition.
+
+If it is easier, both of these sub-modes can involve complete deletion of
+a single demonstration partitioned datastore (only the first mode would
+immediately re-load the demonstration datastore from the original demonstration
+dataset.
+
 .. _capabilityrequirements:
 
 CSCI capability requirements
