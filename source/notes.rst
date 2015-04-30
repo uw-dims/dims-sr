@@ -35,9 +35,6 @@ Glossary of Terms
        A Unix/Linux service daemon that is responsible for running background
        tasks on a scheduled basis.
 
-   Git
-       A source code version management system in widespread use.
-
    CIFglue
        "Simple rails app to quickly add indicators to the Collective Intelligence
        Framework"
@@ -51,7 +48,7 @@ Glossary of Terms
        are MD5, SHA1, SHA224, SHA256, RIPEMD-128. (See also
        http://en.wikipedia.org/wiki/Cryptographic_hash_function).
 
-    CSCI
+   CSCI
        An aggregation of software that satisfies an end use function and is
        designated for separate configuration management by the acquirer. CSCIs
        are selected based on tradeoffs among software function, size, host or
@@ -69,8 +66,8 @@ Glossary of Terms
        intelligence resources with state and local law enforcement for greater
        collaboration and information sharing across levels of SLTT governments.
 
-   GZIP
-       Gnu ZIP (file compression program)
+   Git
+       A source code version management system in widespread use.
 
    MUTEX
        Mutual Exclusion (object or lock, used to synchronize execution of
@@ -121,6 +118,9 @@ List of Acronyms
    AMQP
        Advanced Message Queuing Protocol
 
+   API
+       Application Programming Interface
+
    AS
        Autonomous System
 
@@ -141,6 +141,9 @@ List of Acronyms
 
    CISO
        Chief Information and Security Officer
+
+   CLI
+       Command Line Interface
 
    COA
        Course of Action (steps to Respond and Recover)
@@ -171,6 +174,9 @@ List of Acronyms
 
    EO
        Executive Order
+
+   GZIP
+       Gnu ZIP (file compression program)
 
    HSPD
        Homeland Security Presidential Directive
