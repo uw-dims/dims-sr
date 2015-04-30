@@ -86,6 +86,11 @@ Glossary of Terms
    Ops-Trust (ops-t)
        Operational Security Trust organization (see http://ops-trust.net/)
 
+   Port forwarding
+       A mechanism used by NAT firewalls to forward a connection by port
+       number to a host behind the NAT firewall. Also known as Destination
+       NAT, or "DNAT". (See NAT, DNAT.)
+
    Redis
        A "NoSQL" database system used to store files in a key/value pair model via
        a RESTful HTTP/HTTPS interface.
@@ -160,6 +165,9 @@ List of Acronyms
    CSV
        Comma-separated Value (a semi-structured file format)
 
+   DNAT
+       Destination NAT (see NAT and "port forwarding")
+
    DIMS
        Distributed Incident Management System
 
@@ -204,6 +212,9 @@ List of Acronyms
 
    NCFTA
        National Cyber-Forensics & Training Alliance
+
+   NAT
+       Network Address Translation
 
    NTP
        Network Time Protocol (a service exploited to perform reflected/amplified
