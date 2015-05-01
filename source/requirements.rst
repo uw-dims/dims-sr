@@ -133,10 +133,10 @@ intervention.
 
 .. note::
 
-   For an example of what this would look like, see how MozDef or GRR work by
-   building and running their respective Docker images as described
-   in their documentation. DIMS will model these projects in production
-   of a simple demo-mode deployment.
+   For an example of what this would look like, see how `MozDef`_ or
+   `GRR Rapid Response`_ work by building and running their respective Docker
+   images as described in their documentation. DIMS will model these projects
+   in production of a simple demo-mode deployment.
 
 ..
 
@@ -894,6 +894,52 @@ Adaptation requirements
 
 ..
 
+The DIMS system will be designed so as to use a set of operational parameters
+specific to the deployment and user, in order for the system to function as a
+normal internet-accessible service using TCP/IP and DNS. These attributes
+include (but are not limited to):
+
++ Top level domain name (e.g., ``prisem.washington.edu``, or ``test.prisem.washington.edu``)
++ External IP network address block in CIDR notation (e.g., ``140.142.29.0/24``)
++ External IP address of the primary service access point providing web portal, dashboard
+  web application, VPN server, etc. (e.g., ``140.142.29.101``)
++ Description of organization for branding (e.g., "Public Regional Information
+  Security Event Management")
++ Logo for branding
++ Internal IP network address block in CIDR notation (e.g., ``10.1.0.0/16``)
++ Internal NAT gateway address (e.g., ``10.1.0.1``)
+
+These parameters will be stored in a configuration database that will be used
+to configure the system services, network interfaces, brand the documentation,
+customize the appearance of the web application user interface, etc. for the
+specific deployment.
+
+.. note::
+
+    As shown in the domain name examples above, an extra level of domain
+    name system hierarchy may be used to differentiate multiple deployments of
+    DIMS within an organization for the purposes of separating development
+    from test/evaluation from "production", so the following naming scheme
+    may be used (where the same host name ``webapp`` or ``vpn`` may exist
+    uniquely in each of the separate domain name spaces where ``*`` is shown):
+
+
+    .. table:: Segmented domains
+
+        +--------------------------+-----------------------------------------------------+
+        | System purpose           | Top level domain                                    |
+        +==========================+=====================================================+
+        | Development              | ``*.dev.prisem.washington.edu``                     |
+        +--------------------------+-----------------------------------------------------+
+        | DevTest                  | ``*.test.prisem.washington.edu``                    |
+        +--------------------------+-----------------------------------------------------+
+        | Evaluation/Demonstration | ``*.demo.prisem.washington.edu``                    |
+        +--------------------------+-----------------------------------------------------+
+        | Production               | ``*.prisem.washington.edu``                         |
+        +--------------------------+-----------------------------------------------------+
+
+..
+
 .. _safetyreqs:
 
 Safety requirements
@@ -1201,11 +1247,6 @@ or containers for PRISEM tools and MozDef, a common Elasticsearch cluster and
 RabbitMQ cluster would be set up and shared with these (and any other open
 source tools added later).
 
-.. _Collective Intelligence Framework: http://code.google.com/p/collective-intelligence-framework/
-.. _MozDef: http://mozdef.readthedocs.org/en/latest/
-.. _ELK stack: http://www.elasticsearch.org/overview/
-.. _RabbitMQ: http://www.rabbitmq.com/
-
 .. _personnelreqs:
 
 Personnel-related requirements
@@ -1313,3 +1354,8 @@ Precedence and criticality of requirements
 
 ..
 
+.. _Collective Intelligence Framework: http://code.google.com/p/collective-intelligence-framework/
+.. _MozDef: http://mozdef.readthedocs.org/en/latest/
+.. _ELK stack: http://www.elasticsearch.org/overview/
+.. _RabbitMQ: http://www.rabbitmq.com/
+.. _GRR Rapid Response: https://github.com/google/grr
