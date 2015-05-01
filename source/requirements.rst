@@ -1191,14 +1191,20 @@ Leveraging open source components
 
 As much as possible, DIMS will be built through the (re)use of open source
 components used by other projects that are being integrated into the DIMS
-framework. For example, the Collective Intelligence Framework (CIF) v2 and the
-Mozilla Defense Platform (MozDef) both employ Elasticsearch and RabbitMQ in
-their demonstration implementations, and the original PRISEM distributed data
-processing tools also used RabbitMQ. Rather than have two separate instances of
-Elasticsearch running in virtual machines or containers for MozDef and CIF, and
-two separate instances of RabbitMQ in virtual machines or containers for PRISEM
-tools and MozDef, a common Elasticsearch cluster and RabbitMQ cluster would be
-set up and shared with these (and any other open source tools added later).
+framework. For example, the `Collective Intelligence Framework`_ (CIF) v2 and
+the Mozilla Defense Platform (`MozDef`_) both employ the `ELK stack`_ and
+`RabbitMQ`_ in their demonstration implementations, and the original PRISEM
+distributed data processing tools also used RabbitMQ. Rather than have two
+separate instances of Elasticsearch running in virtual machines or containers
+for MozDef and CIF, and two separate instances of RabbitMQ in virtual machines
+or containers for PRISEM tools and MozDef, a common Elasticsearch cluster and
+RabbitMQ cluster would be set up and shared with these (and any other open
+source tools added later).
+
+.. _Collective Intelligence Framework: http://code.google.com/p/collective-intelligence-framework/
+.. _MozDef: http://mozdef.readthedocs.org/en/latest/
+.. _ELK stack: http://www.elasticsearch.org/overview/
+.. _RabbitMQ: http://www.rabbitmq.com/
 
 .. _personnelreqs:
 
