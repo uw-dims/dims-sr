@@ -344,12 +344,20 @@ epub_exclude_files = ['search.html']
 # If false, no index is generated.
 #epub_use_index = True
 
+# The following allows selection of which URL base is used
+# to find intersphinx inventory files (i.e., the location where
+# linked HTML docs will be found).
+
+os.environ['GITBRANCH'] = "develop"
+
+if os.environ.get('DOCSURL') is None:
+    #os.environ['DOCSURL'] = "file://{}".format(os.environ.get('GIT'))
+    os.environ['DOCSURL'] = "http://u12-dev-svr-1.prisem.washington.edu:8080/docs/{}/html/".format(
+        os.environ['GITBRANCH'])
+
 intersphinx_cache_limit = -1   # days to keep the cached inventories (0 == forever)
 intersphinx_mapping = {
-        'dimsocd': ("%s/dims/docs/dims-ocd" % os.environ['HOME'],
-                    ('http://u12-dev-svr-1.prisem.washington.edu:8080/docs/develop/html/dims-ocd/objects.inv', None)),
-        'dimsad': ("%s/dims/docs/dims-ad" % os.environ['HOME'],
-                    ('http://u12-dev-svr-1.prisem.washington.edu:8080/docs/develop/html/dims-ad/objects.inv', None)),
-        'dimstp': ("%s/dims/docs/dims-tp" % os.environ['HOME'],
-                    ('http://u12-dev-svr-1.prisem.washington.edu:8080/docs/develop/html/dims-tp/objects.inv', None))
+        'dimsocd': ("{}/dims-ocd".format(os.environ['DOCSURL']), None),
+        'dimsad': ("{}/dims-ad".format(os.environ['DOCSURL']), None),
+        'dimstp': ("{}/dims-tp".format(os.environ['DOCSURL']), None)
 }
