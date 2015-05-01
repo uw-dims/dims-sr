@@ -811,7 +811,6 @@ Interface identification and diagrams
                constraints, such as whether the assembly may be updated and whether
                business rules apply
             #. Security and privacy constraints
-            #. Security and privacy constraints
     
         #. Required characteristics of communication methods that the CSCI
            must use for the interface, such as:
@@ -931,6 +930,104 @@ Security and privacy requirements
     that must be met for security/privacy certification/accreditation.
 
 ..
+
+.. _networkaccesscontrols:
+
+Network Access Controls
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Remote users need to access DIMS components in order to use the
+system. Direct internet access is necessary for a limited
+subset of DIMS components, while the remainder are to be
+restricted to indirect access through the Dashboard Web
+Application and ops-trust portal front end, or by restricted
+access through a Virtual Private Network (VPN) connection.
+
+#. The features described in :ref:`dwacsci` are to be accessible from the
+   internet from a limited set of network ports.
+   
+#. The features described in :ref:`bdscsci` are primarily only accessible
+   to other CSCI components on a restricted network and have little or no
+   direct user interface, while some features described in :ref:`diutcsci`
+   :ref:`vliscsci` may have user Command Line Interfaces (CLIs) or
+   Application Programming Interfaces (APIs) accessible only
+   when the user is connected by VPN, or through SSH tunneling.
+
+Ideally, all internet access to user interfaces (either graphical or command
+line) will be through a single IP address via direct connection, through a
+proxy connection, or to firewalled hosts via Network Address Translation
+(NAT) and/or Port Forwarding (a.k.a., Destination NAT or DNAT). This is to
+reduce the number of internet routable IP addresses and DNS names for a
+DIMS deployment to just one, as well as to simplify access control
+and access monitoring.
+
+.. _accountaccesscontrols:
+
+Account Access Controls
+~~~~~~~~~~~~~~~~~~~~~~~
+
+All DIMS component services should have access controls allowing only
+authorized users access. The primary mechanism for doing this is the
+use of a *Single Sign-On* (`SSO`_) system and authentication
+service.
+
+
+.. _SSO: http://en.wikipedia.org/wiki/Single_sign-on
+
+.. _secondfactorauth:
+
+Second-factor authentication
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The DIMS system should support the use of *two factor authentication*.
+The ops-trust portal code base supports:
+
+#. Time-base One Time Password (`TOTP`_)
+#. HMAC-based One Time Password (`HOTP`_)
+#. Static single use codes (a list of codes you can use to authenticate if all else fails)
+
+The principle supported application for two-factor authentication is
+`Google Authenticator`_.
+
+
+.. _TOTP: http://en.wikipedia.org/wiki/Time-based_One-time_Password_Algorithm
+.. _HOTP: http://en.wikipedia.org/wiki/HMAC-based_One-time_Password_Algorithm
+.. _Google Authenticator: http://en.wikipedia.org/wiki/Google_Authenticator
+
+
+.. _accountsuspension:
+
+Account suspension
+~~~~~~~~~~~~~~~~~~
+
+When an account is suspected of being compromised, all access for that user
+should be suspended in a manner that is non-destructive (i.e., access is removed,
+but no credentials or account contents are deleted.) This allows an account to
+be toggled off while an investigation takes place, and back on again once the
+account has been deemed secure. Use of a *single-signon* (SSO) mechanism can
+facilitate this, but additional mechanisms to remove access must also be
+taken into consideration. For example, SSL client certificates (e.g., those used
+with OpenVPN).
+
+.. _rekeying:
+
+Rekeying
+~~~~~~~~
+
+Cryptographic keys are used for secure access to many DIMS components, including
+SSH public/private key pairs, and SSL client certificates for OpenVPN access.
+Certificates should be generated for the user automatically as a workflow process
+step performed by the system when a new account is activated in the ops-trust portal.
+
+There should also be a way for user certificates to be regenerated (e.g., when
+someone's laptop is compromised by malware, or is lost/stolen), and a way to
+selectively (or wholesale) regenerate certificates for any/all users (e.g.,
+when a DIMS system component suffers a breach.)
+
+These security mechanisms allow restoration of a secure system with the least
+amount of time/energy as possible.
+
+
 
 .. _environmentreqs:
 
