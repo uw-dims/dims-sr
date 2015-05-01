@@ -18,9 +18,9 @@ System overview
 ---------------
 
 DIMS is funded by the Department of Homeland Security under contract HSHQDC-
-13-C-B0013. For more information, see the document, "System Requirements and
-Concept of Operations for From Local to Gobal Awareness: A Distributed Incident
-Management System (DIMS)" referenced in Section :ref:`referenceddocs`.
+13-C-B0013. For more information, see the
+:ref:`dimsocd:dimsoperationalconceptdescription`.  and contract referenced in
+Section :ref:`referenceddocs`.
 
 The primary mission objectives for the DIMS system are operational in nature,
 focused on facilitating the exchange of operational intelligence and applying
