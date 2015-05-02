@@ -1226,9 +1226,10 @@ Continuous Integration/Continuous Delivery
 
 The systems running DIMS software must support continuous integration of code
 releases, updating runtime executables, stopping and starting service daemons,
-etc., in a controlled and repeatable manner. Runtime components must identify
-the source code release from which they were built in order to track bugs and
-features across multiple deployments with a regular release cycle.
+etc., in a controlled, predictable, and repeatable manner. Runtime components
+must identify the source code release from which they were built (e.g.,
+"v2.1.20" or "v2.1-56-g55a5d1") in order to track bugs and features across
+multiple deployments with a regular release cycle.
 
 .. _leverageopensource:
 
