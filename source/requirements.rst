@@ -491,7 +491,7 @@ down if the user so chooses. Similarly, context about what quantity and quality
 of malicious activity that is known about the "foe" population should also be
 available for easy access (presented if short, or drill-down provided it too
 voluminous). This amount and level of detail provides an overall "situational
-awareness" or scoping of for large volumes of security event data. (The
+awareness" or scoping of large volumes of security event data. (The
 mechanism for such multi-level tabular reports is known as "break" or "step"
 reports).
 
@@ -561,7 +561,7 @@ DIUT User Story 5
 the security system in a tactical way. If a user is found to have had a
 compromise of their account, all access to that user should be disabled
 uniformly across all system components via the single-signon authentication
-subsystem. All cryptograph keys should also be revoked. Once the user has been
+subsystem. All cryptographic keys should also be revoked. Once the user has been
 informed and the computer systems they use cleaned, all cryptographic keys,
 certificates, and password should be updated and re-issued."
 
