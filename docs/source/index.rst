@@ -16,5 +16,4 @@ DIMS System Requirements v |release|
    qualification
    notes
    license
-   appendices
 
