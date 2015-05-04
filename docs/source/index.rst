@@ -13,7 +13,6 @@ DIMS System Requirements v |release|
    scope
    referenceddocs
    requirements
-   qualification
    notes
    license
 
