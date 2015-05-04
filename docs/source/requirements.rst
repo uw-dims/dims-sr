@@ -1073,121 +1073,123 @@ when a DIMS system component suffers a breach.)
 These security mechanisms allow restoration of a secure system with the least
 amount of time/energy as possible.
 
-
-
-.. _environmentreqs:
-
-CSCI environment requirements
------------------------------
-
-.. todo::
-
-    This paragraph shall specify the requirements, if any, regarding the
-    environment in which the CSCI must operate. Examples include the computer
-    hardware and operating system on which the CSCI must run.  (Additional
-    requirements concerning computer resources are given in the next
-    paragraph.)
-
-..
-
-.. _compresourcereqs:
-
-Computer resource requirements
-------------------------------
-
-.. todo::
-
-    This paragraph shall be divided into the following subparagraphs.
-
-..
-
-.. _comphardwarereqs:
-
-Computer hardware requirements
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. todo::
-
-    This paragraph shall specify the requirements, if any, regarding computer
-    hardware that must be used by the CSCI. The requirements shall include, as
-    applicable, number of each type of equipment, type, size, capacity, and
-    other required characteristics of processors, memory, input/output devices,
-    auxiliary storage, communications/network equipment, and other required
-    equipment.
-
-..
-
-.. _compresrouceutilizationreqs:
-
-Computer hardware resource utilization requirements
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. todo::
-
-    This paragraph shall specify the requirements, if any, on the CSCI's
-    computer hardware resource utilization, such as maximum allowable use of
-    processor capacity, memory capacity, input/output device capacity,
-    auxiliary storage device capacity, and communications/network equipment
-    capacity. The requirements (stated, for example, as percentages of the
-    capacity of each computer hardware resource) shall include the conditions,
-    if any, under which the resource utilization is to be measured.
-
-..
-
-.. _compsoftwarereqs:
-
-Computer software requirements
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. todo::
-
-    This paragraph shall specify the requirements, if any, regarding computer
-    software that must be used by, or incorporated into, the CSCI. Examples
-    include operating systems, database management systems, communications/
-    network software, utility software, input and equipment simulators, test
-    software, and manufacturing software. The correct nomenclature, version,
-    and documentation references of each such software item shall be provided.
-
-..
-
-.. _compcommsreqs:
-
-Computer communications requirements
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. todo::
-
-    This paragraph shall specify the additional requirements, if any,
-    concerning the computer communications that must be used by the CSCI.
-    Examples include geographic locations to be linked; configuration and
-    network topology; transmission techniques; data transfer rates; gateways;
-    required system use times; type and volume of data to be
-    transmitted/received; time boundaries for transmission/ reception/response;
-    peak volumes of data; and diagnostic features.
-
-..
-
-.. _swqualityfactors:
-
-Software quality factors
-------------------------
-
-.. todo::
-
-    This paragraph shall specify the CSCI requirements, if any, concerned with
-    software quality factors identified in the contract or derived from a
-    higher level specification. Examples include quantitative requirements
-    regarding CSCI functionality (the ability to perform all required
-    functions), reliability (the ability to perform with correct, consistent
-    results), maintainability (the ability to be easily corrected),
-    availability (the ability to be accessed and operated when needed),
-    flexibility (the ability to be easily adapted to changing requirements),
-    portability (the ability to be easily modified for a new environment),
-    reusability (the ability to be used in multiple applications), testability
-    (the ability to be easily and thoroughly tested), usability (the ability to
-    be easily learned and used), and other attributes.
-
-..
+.. #### The following sections are commented out unless/until we need them.
+.. #### This is to keep from having empty sections in the released doc.
+.. ####
+.. ####
+.. #### .. _environmentreqs:
+.. #### 
+.. #### CSCI environment requirements
+.. #### -----------------------------
+.. #### 
+.. #### .. todo::
+.. #### 
+.. ####     This paragraph shall specify the requirements, if any, regarding the
+.. ####     environment in which the CSCI must operate. Examples include the computer
+.. ####     hardware and operating system on which the CSCI must run.  (Additional
+.. ####     requirements concerning computer resources are given in the next
+.. ####     paragraph.)
+.. #### 
+.. #### ..
+.. #### 
+.. #### .. _compresourcereqs:
+.. #### 
+.. #### Computer resource requirements
+.. #### ------------------------------
+.. #### 
+.. #### .. todo::
+.. #### 
+.. ####     This paragraph shall be divided into the following subparagraphs.
+.. #### 
+.. #### ..
+.. #### 
+.. #### .. _comphardwarereqs:
+.. #### 
+.. #### Computer hardware requirements
+.. #### ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. #### 
+.. #### .. todo::
+.. #### 
+.. ####     This paragraph shall specify the requirements, if any, regarding computer
+.. ####     hardware that must be used by the CSCI. The requirements shall include, as
+.. ####     applicable, number of each type of equipment, type, size, capacity, and
+.. ####     other required characteristics of processors, memory, input/output devices,
+.. ####     auxiliary storage, communications/network equipment, and other required
+.. ####     equipment.
+.. #### 
+.. #### ..
+.. #### 
+.. #### .. _compresrouceutilizationreqs:
+.. #### 
+.. #### Computer hardware resource utilization requirements
+.. #### ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. #### 
+.. #### .. todo::
+.. #### 
+.. ####     This paragraph shall specify the requirements, if any, on the CSCI's
+.. ####     computer hardware resource utilization, such as maximum allowable use of
+.. ####     processor capacity, memory capacity, input/output device capacity,
+.. ####     auxiliary storage device capacity, and communications/network equipment
+.. ####     capacity. The requirements (stated, for example, as percentages of the
+.. ####     capacity of each computer hardware resource) shall include the conditions,
+.. ####     if any, under which the resource utilization is to be measured.
+.. #### 
+.. #### ..
+.. #### 
+.. #### .. _compsoftwarereqs:
+.. #### 
+.. #### Computer software requirements
+.. #### ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. #### 
+.. #### .. todo::
+.. #### 
+.. ####     This paragraph shall specify the requirements, if any, regarding computer
+.. ####     software that must be used by, or incorporated into, the CSCI. Examples
+.. ####     include operating systems, database management systems, communications/
+.. ####     network software, utility software, input and equipment simulators, test
+.. ####     software, and manufacturing software. The correct nomenclature, version,
+.. ####     and documentation references of each such software item shall be provided.
+.. #### 
+.. #### ..
+.. #### 
+.. #### .. _compcommsreqs:
+.. #### 
+.. #### Computer communications requirements
+.. #### ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. #### 
+.. #### .. todo::
+.. #### 
+.. ####     This paragraph shall specify the additional requirements, if any,
+.. ####     concerning the computer communications that must be used by the CSCI.
+.. ####     Examples include geographic locations to be linked; configuration and
+.. ####     network topology; transmission techniques; data transfer rates; gateways;
+.. ####     required system use times; type and volume of data to be
+.. ####     transmitted/received; time boundaries for transmission/ reception/response;
+.. ####     peak volumes of data; and diagnostic features.
+.. #### 
+.. #### ..
+.. #### 
+.. #### .. _swqualityfactors:
+.. #### 
+.. #### Software quality factors
+.. #### ------------------------
+.. #### 
+.. #### .. todo::
+.. #### 
+.. ####     This paragraph shall specify the CSCI requirements, if any, concerned with
+.. ####     software quality factors identified in the contract or derived from a
+.. ####     higher level specification. Examples include quantitative requirements
+.. ####     regarding CSCI functionality (the ability to perform all required
+.. ####     functions), reliability (the ability to perform with correct, consistent
+.. ####     results), maintainability (the ability to be easily corrected),
+.. ####     availability (the ability to be accessed and operated when needed),
+.. ####     flexibility (the ability to be easily adapted to changing requirements),
+.. ####     portability (the ability to be easily modified for a new environment),
+.. ####     reusability (the ability to be used in multiple applications), testability
+.. ####     (the ability to be easily and thoroughly tested), usability (the ability to
+.. ####     be easily learned and used), and other attributes.
+.. #### 
+.. #### ..
 
 .. _designcontraints:
 
