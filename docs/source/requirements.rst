@@ -253,7 +253,7 @@ order to have copies that are subject to expiration and purging from the
 system. Some investigations may take many months, which could bump up against
 the data retention period (approximately 12 months, at present)."
 
-.. bdsuserstory2:
+.. _bdsuserstory2:
 
 BDS User Story 2
 ^^^^^^^^^^^^^^^^
