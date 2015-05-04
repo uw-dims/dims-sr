@@ -71,9 +71,6 @@ The structure of this document has been adapted principally from MIL-STD-498
   environment; resources; software quality factors; and design and implementation
   constraints.
 
-+ Section :ref:`qualificationprovisions` provides qualification provisions that
-  ensure that each requirement is met in the final system.
-
 + Section :ref:`notes` provides an alphabetical listing of acronyms and
   abbreviations used in this document.
 
