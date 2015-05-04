@@ -690,193 +690,196 @@ determine the policy for sharing of information (by clearly seeing its tagged
 TLP sensitivity level). Reports should similarly be tagged appropriately with
 TLP for the sensitivity level of the aggregate document."
 
-
-.. _externalrequirements:
-
-CSCI external interface requirements
-------------------------------------
-
-.. todo::
-
-    .. attention::
-
-        This paragraph shall be divided into subparagraphs to specify the
-        requirements, if any, for the CSCI's external interfaces. This
-        paragraph may reference one or more Interface Requirements
-        Specifications (IRSs) or other documents containing these requirements.
-
-    ..
-..
-
-.. _interfaceid:
-
-Interface identification and diagrams
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. todo::
-
-    .. attention::
-
-        This paragraph shall identify the required external interfaces of the
-        CSCI (that is, relationships with other entities that involve sharing,
-        providing or exchanging data). The identification of each interface
-        shall include a project-unique identifier and shall designate the
-        interfacing entities (systems, configuration items, users, etc.) by
-        name, number, version, and documentation references, as applicable.
-        The identification shall state which entities have fixed interface
-        characteristics (and therefore impose interface requirements on
-        interfacing entities) and which are being developed or modified (thus
-        having interface requirements imposed on them).  One or more interface
-        diagrams shall be provided to depict the interfaces.
-
-    ..
-
-..
-
-.. _interfacepuid:
-
-(Project unique identifier of interface)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. todo::
-
-    .. attention::
-
-        This paragraph (beginning with 3.3.2) shall identify a CSCI external
-        interface by project unique identifier, shall briefly identify the
-        interfacing entities, and shall be divided into subparagraphs as needed
-        to state the requirements imposed on the CSCI to achieve the interface.
-        Interface characteristics of the other entities involved in the
-        interface shall be stated as assumptions or as "When [the entity not
-        covered] does this, the CSCI shall...," not as requirements on the
-        other entities. This paragraph may reference other documents (such as
-        data dictionaries, standards for communication protocols, and standards
-        for user interfaces) in place of stating the information here. The
-        requirements shall include the following, as applicable, presented in
-        any order suited to the requirements, and shall note any differences in
-        these characteristics from the point of view of the interfacing
-        entities (such as different expectations about the size, frequency, or
-        other characteristics of data elements):
-
-        #. Priority that the CSCI must assign the interface
-        #. Requirements on the type of interface (such as real-time data
-           transfer, storage-and-retrieval of data, etc.) to be implemented
-        #. Required characteristics of individual data elements that the CSCI
-           must provide, store, send, access, receive, etc., such as:
-    
-            #. Names/identifiers
-    
-                #. Project-unique identifier
-                #. Non-technical (natural language) name
-                #. DoD standard data element name
-                #. Technical name (e.g., record or data structure name in code or
-                   database)
-                #. Abbreviations or synonymous names
-    
-            #. Data type (alphanumeric, integer, etc.)
-            #. Size and format (such as length and punctuation of a character
-               string)
-            #. Units of measurement (such as meters, dollars, nanoseconds)
-            #. Range or enumeration of possible values (such as 0-99)
-            #. Accuracy (how correct) and precision (number of significant digits)
-            #. Priority, timing, frequency, volume, sequencing, and other
-               constraints, such as whether the data element may be updated and
-               whether business rules apply
-            #. Security and privacy constraints
-            #. Sources (setting/sending entities) and recipients (using/receiving
-               entities)
-    
-        #. Required characteristics of data element assemblies (records,
-           messages, files, arrays, displays, reports, etc.) that the CSCI must
-           provide, store, send, access, receive, etc., such as:
-    
-            #. Names/identifiers
-    
-                #. Project-unique identifier
-                #. Non-technical (natural language) name
-                #. Technical name (e.g., record or data structure name in code or
-                   database)
-                #. Abbreviations or synonymous names
-    
-            #. Data elements in the assembly and their structure (number, order,
-               grouping)
-            #. Medium (such as disk) and structure of data elements/assemblies on
-               the medium
-            #. Visual and auditory characteristics of displays and other outputs
-               (such as colors, layouts, fonts, icons and other display elements,
-               beeps, lights)
-            #. Relationships among assemblies, such as sorting/access
-               characteristics
-            #. Priority, timing, frequency, volume, sequencing, and other
-               constraints, such as whether the assembly may be updated and whether
-               business rules apply
-            #. Security and privacy constraints
-    
-        #. Required characteristics of communication methods that the CSCI
-           must use for the interface, such as:
-    
-            #. Project-unique identifier(s)
-            #. Communication links/bands/frequencies/media and their
-               characteristics
-            #. Message formatting
-            #. Flow control (such as sequence numbering and buffer allocation)
-            #. Data transfer rate, whether periodic/aperiodic, and interval
-               between transfers
-            #. Routing, addressing, and naming conventions
-            #. Transmission services, including priority and grade
-            #. Safety/security/privacy considerations, such as encryption, user
-               authentication, compartmentalization, and auditing
-    
-        #. Required characteristics of protocols the CSCI must use for the
-           interface, such as:
-    
-            #. Project-unique identifier(s)
-            #. Priority/layer of the protocol
-            #. Packeting, including fragmentation and reassembly, routing, and
-               addressing
-            #. Legality checks, error control, and recovery procedures
-            #. Synchronization, including connection establishment, maintenance,
-               termination
-            #. Status, identification, and any other reporting features
-    
-        #. Other required characteristics, such as physical compatibility of
-           the interfacing entities (dimensions, tolerances, loads, plug
-           compatibility, etc.), voltages, etc.
-    
-    ..
-
-..
-
-.. _internalinterfacereqs:
-
-CSCI internal interface requirements
-------------------------------------
-
-.. todo::
-
-    This paragraph shall specify the requirements, if any, imposed on
-    interfaces internal to the CSCI. If all internal interfaces are left to the
-    design, this fact shall be so stated. If such requirements are to be
-    imposed, paragraph 3.3 of this DID provides a list of topics to be
-    considered.
-
-..
-
-.. _internaldatareqs:
-
-CSCI internal data requirements
--------------------------------
-
-.. todo::
-
-    This paragraph shall specify the requirements, if any, imposed on data
-    internal to the CSCI. Included shall be requirements, if any, on databases
-    and data files to be included in the CSCI. If all decisions about internal
-    data are left to the design, this fact shall be so stated. If such
-    requirements are to be imposed, paragraphs 3.3.x.c and 3.3.x.d of this DID
-    provide a list of topics to be considered.
-
-..
+.. #### The following sections are commented out unless/until we need them.
+.. #### This is to keep from having empty sections in the released doc.
+.. ####
+.. ####
+.. #### .. _externalrequirements:
+.. #### 
+.. #### CSCI external interface requirements
+.. #### ------------------------------------
+.. #### 
+.. #### .. todo::
+.. #### 
+.. ####     .. attention::
+.. #### 
+.. ####         This paragraph shall be divided into subparagraphs to specify the
+.. ####         requirements, if any, for the CSCI's external interfaces. This
+.. ####         paragraph may reference one or more Interface Requirements
+.. ####         Specifications (IRSs) or other documents containing these requirements.
+.. #### 
+.. ####     ..
+.. #### ..
+.. #### 
+.. #### .. _interfaceid:
+.. #### 
+.. #### Interface identification and diagrams
+.. #### ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. #### 
+.. #### .. todo::
+.. #### 
+.. ####     .. attention::
+.. #### 
+.. ####         This paragraph shall identify the required external interfaces of the
+.. ####         CSCI (that is, relationships with other entities that involve sharing,
+.. ####         providing or exchanging data). The identification of each interface
+.. ####         shall include a project-unique identifier and shall designate the
+.. ####         interfacing entities (systems, configuration items, users, etc.) by
+.. ####         name, number, version, and documentation references, as applicable.
+.. ####         The identification shall state which entities have fixed interface
+.. ####         characteristics (and therefore impose interface requirements on
+.. ####         interfacing entities) and which are being developed or modified (thus
+.. ####         having interface requirements imposed on them).  One or more interface
+.. ####         diagrams shall be provided to depict the interfaces.
+.. #### 
+.. ####     ..
+.. #### 
+.. #### ..
+.. #### 
+.. #### .. _interfacepuid:
+.. #### 
+.. #### (Project unique identifier of interface)
+.. #### ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. #### 
+.. #### .. todo::
+.. #### 
+.. ####     .. attention::
+.. #### 
+.. ####         This paragraph (beginning with 3.3.2) shall identify a CSCI external
+.. ####         interface by project unique identifier, shall briefly identify the
+.. ####         interfacing entities, and shall be divided into subparagraphs as needed
+.. ####         to state the requirements imposed on the CSCI to achieve the interface.
+.. ####         Interface characteristics of the other entities involved in the
+.. ####         interface shall be stated as assumptions or as "When [the entity not
+.. ####         covered] does this, the CSCI shall...," not as requirements on the
+.. ####         other entities. This paragraph may reference other documents (such as
+.. ####         data dictionaries, standards for communication protocols, and standards
+.. ####         for user interfaces) in place of stating the information here. The
+.. ####         requirements shall include the following, as applicable, presented in
+.. ####         any order suited to the requirements, and shall note any differences in
+.. ####         these characteristics from the point of view of the interfacing
+.. ####         entities (such as different expectations about the size, frequency, or
+.. ####         other characteristics of data elements):
+.. #### 
+.. ####         #. Priority that the CSCI must assign the interface
+.. ####         #. Requirements on the type of interface (such as real-time data
+.. ####            transfer, storage-and-retrieval of data, etc.) to be implemented
+.. ####         #. Required characteristics of individual data elements that the CSCI
+.. ####            must provide, store, send, access, receive, etc., such as:
+.. ####     
+.. ####             #. Names/identifiers
+.. ####     
+.. ####                 #. Project-unique identifier
+.. ####                 #. Non-technical (natural language) name
+.. ####                 #. DoD standard data element name
+.. ####                 #. Technical name (e.g., record or data structure name in code or
+.. ####                    database)
+.. ####                 #. Abbreviations or synonymous names
+.. ####     
+.. ####             #. Data type (alphanumeric, integer, etc.)
+.. ####             #. Size and format (such as length and punctuation of a character
+.. ####                string)
+.. ####             #. Units of measurement (such as meters, dollars, nanoseconds)
+.. ####             #. Range or enumeration of possible values (such as 0-99)
+.. ####             #. Accuracy (how correct) and precision (number of significant digits)
+.. ####             #. Priority, timing, frequency, volume, sequencing, and other
+.. ####                constraints, such as whether the data element may be updated and
+.. ####                whether business rules apply
+.. ####             #. Security and privacy constraints
+.. ####             #. Sources (setting/sending entities) and recipients (using/receiving
+.. ####                entities)
+.. ####     
+.. ####         #. Required characteristics of data element assemblies (records,
+.. ####            messages, files, arrays, displays, reports, etc.) that the CSCI must
+.. ####            provide, store, send, access, receive, etc., such as:
+.. ####     
+.. ####             #. Names/identifiers
+.. ####     
+.. ####                 #. Project-unique identifier
+.. ####                 #. Non-technical (natural language) name
+.. ####                 #. Technical name (e.g., record or data structure name in code or
+.. ####                    database)
+.. ####                 #. Abbreviations or synonymous names
+.. ####     
+.. ####             #. Data elements in the assembly and their structure (number, order,
+.. ####                grouping)
+.. ####             #. Medium (such as disk) and structure of data elements/assemblies on
+.. ####                the medium
+.. ####             #. Visual and auditory characteristics of displays and other outputs
+.. ####                (such as colors, layouts, fonts, icons and other display elements,
+.. ####                beeps, lights)
+.. ####             #. Relationships among assemblies, such as sorting/access
+.. ####                characteristics
+.. ####             #. Priority, timing, frequency, volume, sequencing, and other
+.. ####                constraints, such as whether the assembly may be updated and whether
+.. ####                business rules apply
+.. ####             #. Security and privacy constraints
+.. ####     
+.. ####         #. Required characteristics of communication methods that the CSCI
+.. ####            must use for the interface, such as:
+.. ####     
+.. ####             #. Project-unique identifier(s)
+.. ####             #. Communication links/bands/frequencies/media and their
+.. ####                characteristics
+.. ####             #. Message formatting
+.. ####             #. Flow control (such as sequence numbering and buffer allocation)
+.. ####             #. Data transfer rate, whether periodic/aperiodic, and interval
+.. ####                between transfers
+.. ####             #. Routing, addressing, and naming conventions
+.. ####             #. Transmission services, including priority and grade
+.. ####             #. Safety/security/privacy considerations, such as encryption, user
+.. ####                authentication, compartmentalization, and auditing
+.. ####     
+.. ####         #. Required characteristics of protocols the CSCI must use for the
+.. ####            interface, such as:
+.. ####     
+.. ####             #. Project-unique identifier(s)
+.. ####             #. Priority/layer of the protocol
+.. ####             #. Packeting, including fragmentation and reassembly, routing, and
+.. ####                addressing
+.. ####             #. Legality checks, error control, and recovery procedures
+.. ####             #. Synchronization, including connection establishment, maintenance,
+.. ####                termination
+.. ####             #. Status, identification, and any other reporting features
+.. ####     
+.. ####         #. Other required characteristics, such as physical compatibility of
+.. ####            the interfacing entities (dimensions, tolerances, loads, plug
+.. ####            compatibility, etc.), voltages, etc.
+.. ####     
+.. ####     ..
+.. #### 
+.. #### ..
+.. #### 
+.. #### .. _internalinterfacereqs:
+.. #### 
+.. #### CSCI internal interface requirements
+.. #### ------------------------------------
+.. #### 
+.. #### .. todo::
+.. #### 
+.. ####     This paragraph shall specify the requirements, if any, imposed on
+.. ####     interfaces internal to the CSCI. If all internal interfaces are left to the
+.. ####     design, this fact shall be so stated. If such requirements are to be
+.. ####     imposed, paragraph 3.3 of this DID provides a list of topics to be
+.. ####     considered.
+.. #### 
+.. #### ..
+.. #### 
+.. #### .. _internaldatareqs:
+.. #### 
+.. #### CSCI internal data requirements
+.. #### -------------------------------
+.. #### 
+.. #### .. todo::
+.. #### 
+.. ####     This paragraph shall specify the requirements, if any, imposed on data
+.. ####     internal to the CSCI. Included shall be requirements, if any, on databases
+.. ####     and data files to be included in the CSCI. If all decisions about internal
+.. ####     data are left to the design, this fact shall be so stated. If such
+.. ####     requirements are to be imposed, paragraphs 3.3.x.c and 3.3.x.d of this DID
+.. ####     provide a list of topics to be considered.
+.. #### 
+.. #### ..
 
 .. _adaptationreqs:
 
