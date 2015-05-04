@@ -1327,6 +1327,18 @@ Per Section :ref:`exportcontrol`, all software packaged for release *must* have
 checks to confirm that cryptographic libraries and/or encrypt keys are
 *not present* in the packaged source or delivered system component(s).
 
+.. _opensourcerelease:
+
+Open source release
+~~~~~~~~~~~~~~~~~~~
+
+All DIMS source code will be released through GitHub at
+https://github.com/uw-dims under the license found in Section :ref:`license`.
+All documentation will be released at GitHub and/or `Read the Docs`_
+under the same license.
+
+.. _Read the Docs: https://readthedocs.org/
+
 .. #### The following section is commented out unless/until we need it.
 .. #### This is to keep from having empty sections in the released doc.
 .. ####
