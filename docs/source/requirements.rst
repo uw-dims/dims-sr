@@ -1248,54 +1248,57 @@ or containers for PRISEM tools and MozDef, a common Elasticsearch cluster and
 RabbitMQ cluster would be set up and shared with these (and any other open
 source tools added later).
 
-.. _personnelreqs:
-
-Personnel-related requirements
-------------------------------
-
-.. todo::
-
-    This paragraph shall specify the CSCI requirements, if any, included to
-    accommodate the number, skill levels, duty cycles, training needs, or other
-    information about the personnel who will use or support the CSCI. Examples
-    include requirements for number of simultaneous users and for built-in help
-    or training features. Also included shall be the human factors engineering
-    requirements, if any, imposed on the CSCI.  These requirements shall
-    include, as applicable, considerations for the capabilities and limitations
-    of humans; foreseeable human errors under both normal and extreme
-    conditions; and specific areas where the effects of human error would be
-    particularly serious. Examples include requirements for color and duration
-    of error messages, physical placement of critical indicators or keys, and
-    use of auditory signals.
-
-..
-
-.. _trainingreqs:
-
-Training-related requirements
------------------------------
-
-.. todo::
-
-    This paragraph shall specify the CSCI requirements, if any, pertaining to
-    training. Examples include training software to be included in the CSCI.
-
-..
-
-.. _logisticsreqs:
-
-Logistics-related requirements
-------------------------------
-
-.. todo::
-
-    This paragraph shall specify the CSCI requirements, if any, concerned with
-    logistics considerations. These considerations may include: system
-    maintenance, software support, system transportation modes, supply system
-    requirements, impact on existing facilities, and impact on existing
-    equipment.
-
-..
+.. #### The following sections are commented out unless/until we need them.
+.. #### This is to keep from having empty sections in the released doc.
+.. ####
+.. #### .. _personnelreqs:
+.. #### 
+.. #### Personnel-related requirements
+.. #### ------------------------------
+.. #### 
+.. #### .. todo::
+.. #### 
+.. ####     This paragraph shall specify the CSCI requirements, if any, included to
+.. ####     accommodate the number, skill levels, duty cycles, training needs, or other
+.. ####     information about the personnel who will use or support the CSCI. Examples
+.. ####     include requirements for number of simultaneous users and for built-in help
+.. ####     or training features. Also included shall be the human factors engineering
+.. ####     requirements, if any, imposed on the CSCI.  These requirements shall
+.. ####     include, as applicable, considerations for the capabilities and limitations
+.. ####     of humans; foreseeable human errors under both normal and extreme
+.. ####     conditions; and specific areas where the effects of human error would be
+.. ####     particularly serious. Examples include requirements for color and duration
+.. ####     of error messages, physical placement of critical indicators or keys, and
+.. ####     use of auditory signals.
+.. #### 
+.. #### ..
+.. #### 
+.. #### .. _trainingreqs:
+.. #### 
+.. #### Training-related requirements
+.. #### -----------------------------
+.. #### 
+.. #### .. todo::
+.. #### 
+.. ####     This paragraph shall specify the CSCI requirements, if any, pertaining to
+.. ####     training. Examples include training software to be included in the CSCI.
+.. #### 
+.. #### ..
+.. #### 
+.. #### .. _logisticsreqs:
+.. #### 
+.. #### Logistics-related requirements
+.. #### ------------------------------
+.. #### 
+.. #### .. todo::
+.. #### 
+.. ####     This paragraph shall specify the CSCI requirements, if any, concerned with
+.. ####     logistics considerations. These considerations may include: system
+.. ####     maintenance, software support, system transportation modes, supply system
+.. ####     requirements, impact on existing facilities, and impact on existing
+.. ####     equipment.
+.. #### 
+.. #### ..
 
 .. _otherreqs:
 
