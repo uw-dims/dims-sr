@@ -940,25 +940,6 @@ specific deployment.
 
 ..
 
-.. _safetyreqs:
-
-Safety requirements
--------------------
-
-.. todo::
-
-    This paragraph shall specify the CSCI requirements, if any, concerned with
-    preventing or minimizing unintended hazards to personnel, property, and the
-    physical environment. Examples include safeguards the CSCI must provide to
-    prevent inadvertent actions (such as accidentally issuing an "auto pilot
-    off" command) and non-actions (such as failure to issue an intended "auto
-    pilot off" command). This paragraph shall include the CSCI requirements, if
-    any, regarding nuclear components of the system, including, as applicable,
-    prevention of inadvertent detonation and compliance with nuclear safety
-    rules.
-
-..
-
 .. _securityreqs:
 
 Security and privacy requirements
