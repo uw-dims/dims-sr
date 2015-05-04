@@ -1,8 +1,10 @@
 .. DIMS System Requirements documentation master file.
 
-========================
-DIMS System Requirements
-========================
+.. _dimssystemrequirements:
+
+====================================
+DIMS System Requirements v |release|
+====================================
 
 .. toctree::
    :numbered:
@@ -11,9 +13,6 @@ DIMS System Requirements
    scope
    referenceddocs
    requirements
-   qualification
-   traceability
    notes
    license
-   appendices
 
