@@ -1327,22 +1327,24 @@ Per Section :ref:`exportcontrol`, all software packaged for release *must* have
 checks to confirm that cryptographic libraries and/or encrypt keys are
 *not present* in the packaged source or delivered system component(s).
 
-
-.. _precedenceofreqs:
-
-Precedence and criticality of requirements
-------------------------------------------
-
-.. todo::
-
-    This paragraph shall specify, if applicable, the order of precedence,
-    criticality, or assigned weights indicating the relative importance of the
-    requirements in this specification. Examples include identifying those
-    requirements deemed critical to safety, to security, or to privacy for
-    purposes of singling them out for special treatment. If all requirements
-    have equal weight, this paragraph shall so state.
-
-..
+.. #### The following section is commented out unless/until we need it.
+.. #### This is to keep from having empty sections in the released doc.
+.. ####
+.. #### .. _precedenceofreqs:
+.. #### 
+.. #### Precedence and criticality of requirements
+.. #### ------------------------------------------
+.. #### 
+.. #### .. todo::
+.. #### 
+.. ####     This paragraph shall specify, if applicable, the order of precedence,
+.. ####     criticality, or assigned weights indicating the relative importance of the
+.. ####     requirements in this specification. Examples include identifying those
+.. ####     requirements deemed critical to safety, to security, or to privacy for
+.. ####     purposes of singling them out for special treatment. If all requirements
+.. ####     have equal weight, this paragraph shall so state.
+.. #### 
+.. #### ..
 
 .. _Collective Intelligence Framework: http://code.google.com/p/collective-intelligence-framework/
 .. _MozDef: http://mozdef.readthedocs.org/en/latest/
