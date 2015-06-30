@@ -193,8 +193,8 @@ Each capability is labelled with its specific CSCI
 
 .. _bdscsci:
 
-Backend Data Stores CSCI - (BDS)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Backend Data Stores (BDS) CSCI
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The following sections describe the requirements for the Backend
 Data Stores (BDS) CSCI.
@@ -269,8 +269,8 @@ etc.)"
 
 .. _dwacsci:
 
-Dashboard Web Application CSCI - (DWA)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Dashboard Web Application (DWA) CSCI
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Dashboard Web Application, also referred to as the DIMS Dashboard, 
 provides a multi-faceted user interface and data visualization and
@@ -403,8 +403,8 @@ upon system startup and at periodic intervals that indicate operational status."
 
 .. _diutcsci:
 
-Data Integration and User Tools CSCI - (DIUT)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Data Integration and User Tools (DIUT) CSCI
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The following sections describe the requirements for the Data
 Integration and User Tools (DIUT) CSCI.
@@ -618,8 +618,8 @@ the moment."
 
 .. _vliscsci:
 
-Vertical/Lateral Information Sharing CSCI - (VLIS)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Vertical/Lateral Information Sharing (VLIS) CSCI
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The following sections describe the requirements for the Vertical
 and Lateral Information Sharing (VLIS) CSCI.
@@ -978,10 +978,10 @@ access through a Virtual Private Network (VPN) connection.
    
 #. The features described in :ref:`bdscsci` are primarily only accessible
    to other CSCI components on a restricted network and have little or no
-   direct user interface, while some features described in :ref:`diutcsci`
-   :ref:`vliscsci` may have user Command Line Interfaces (CLIs) or
-   Application Programming Interfaces (APIs) accessible only
-   when the user is connected by VPN, or through SSH tunneling.
+   direct user interface, while some features described in Section
+   :ref:`diutcsci` and Section :ref:`vliscsci` may have user Command Line
+   Interfaces (CLIs) or Application Programming Interfaces (APIs) accessible
+   only when the user is connected by VPN, or through SSH tunneling.
 
 Ideally, all internet access to user interfaces (either graphical or command
 line) will be through a single IP address via direct connection, through a
@@ -1175,7 +1175,7 @@ amount of time/energy as possible.
 .. #### 
 .. #### ..
 
-.. _designcontraints:
+.. _designconstraints:
 
 Design and implementation constraints
 -------------------------------------
