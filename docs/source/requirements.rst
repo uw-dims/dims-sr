@@ -30,8 +30,8 @@ Requirements
 
 .. _statesandmodes:
 
-[[statesandmodes]] Required states and modes
---------------------------------------------
+Required states and modes
+-------------------------
 
 .. todo::
 
@@ -169,8 +169,8 @@ dataset.
 
 .. _capabilityrequirements:
 
-[[capabilityrequirements]] CSCI capability requirements
--------------------------------------------------------
+CSCI capability requirements
+----------------------------
 
 The DIMS system is divided into the following high-level CSCI sets,
 per the acquisition contract referenced in Sections :ref:`systemoverview`
@@ -191,8 +191,8 @@ Each capability is labelled with its specific CSCI
 
 .. _bdscsci:
 
-[[bdscsci]] Backend Data Stores (BDS) CSCI
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Backend Data Stores (BDS) CSCI
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The following sections describe the requirements for the Backend
 Data Stores (BDS) CSCI.
@@ -267,8 +267,8 @@ etc.)"
 
 .. _dwacsci:
 
-[[dwacsci]] Dashboard Web Application (DWA) CSCI
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Dashboard Web Application (DWA) CSCI
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Dashboard Web Application, also referred to as the DIMS Dashboard, 
 provides a multi-faceted user interface and data visualization and
@@ -401,8 +401,8 @@ upon system startup and at periodic intervals that indicate operational status."
 
 .. _diutcsci:
 
-[[diutcsci]] Data Integration and User Tools (DIUT) CSCI
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Data Integration and User Tools (DIUT) CSCI
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The following sections describe the requirements for the Data
 Integration and User Tools (DIUT) CSCI.
@@ -616,8 +616,8 @@ the moment."
 
 .. _vliscsci:
 
-[[vliscsci]] Vertical/Lateral Information Sharing (VLIS) CSCI
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Vertical/Lateral Information Sharing (VLIS) CSCI
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The following sections describe the requirements for the Vertical
 and Lateral Information Sharing (VLIS) CSCI.
@@ -881,8 +881,8 @@ TLP for the sensitivity level of the aggregate document."
 
 .. _adaptationreqs:
 
-[[adaptationreqs]] Adaptation requirements
-------------------------------------------
+Adaptation requirements
+-----------------------
 
 .. todo::
 
@@ -943,8 +943,8 @@ specific deployment.
 
 .. _securityreqs:
 
-[[securityreqs]] Security and privacy requirements
---------------------------------------------------
+Security and privacy requirements
+---------------------------------
 
 .. todo::
 
@@ -1175,8 +1175,8 @@ amount of time/energy as possible.
 
 .. _designconstraints:
 
-[[designcontraints]] Design and implementation constraints
-----------------------------------------------------------
+Design and implementation constraints
+-------------------------------------
 
 .. _automatedprovisioning:
 
@@ -1286,8 +1286,8 @@ source tools added later).
 
 .. _otherreqs:
 
-[[otherreqs]] Other requirements
---------------------------------
+Other requirements
+------------------
 
 .. _exportcontrol:
 
@@ -1304,8 +1304,8 @@ installation process.
 
 .. _packagingreqs:
 
-[[packagingreqs]] Packaging requirements
-----------------------------------------
+Packaging requirements
+----------------------
 
 .. todo::
 
