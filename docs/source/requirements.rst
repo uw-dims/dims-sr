@@ -189,7 +189,7 @@ This subsection is divided into subparagraphs to itemize the
 requirements associated with each capability of these CSCI sets.
 Each capability is labelled with its specific CSCI
 
-.. _bdsCsci
+.. _bdsCsci:
 
 Backend Data Stores (BDS) CSCI
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -265,7 +265,7 @@ MD5 or other cryptographic hash values, file names, Registry key settings,
 etc.)"
 
 
-.. _dwaCsci
+.. _dwaCsci:
 
 Dashboard Web Application (DWA) CSCI
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -399,7 +399,7 @@ via an intuitive web user interface."
 upon system startup and at periodic intervals that indicate operational status."
 
 
-.. _diutCsci
+.. _diutCsci:
 
 Data Integration and User Tools (DIUT) CSCI
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -614,7 +614,7 @@ really need to ask for to get an answer in the time frame I am faced with at
 the moment."
 
 
-.. _vlisCsci
+.. _vlisCsci:
 
 Vertical/Lateral Information Sharing (VLIS) CSCI
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
