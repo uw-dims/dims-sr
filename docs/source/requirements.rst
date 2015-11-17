@@ -7,13 +7,13 @@ Requirements
 
    Throughout this (and other) DIMS documents, requirements are identified
    symbolically. For example, the first requirement below is identified by the
-   symbol **statesandmodes**.  In this document, the definition of the symbol
-   is shown in double-brackets (**[[statesandmodes]]**) in the subsection
-   heading where it is defined to make the symbol explicitly known to the
-   reader.  In other documents that must trace back to these requirements,
-   the use of *intersphinx* links are used, which render the subsection
-   heading and thus show the same symbol in double-brackets to clearly
-   show how requirements are linked.
+   symbol **modetoggles**.  In this document, the definition of the symbol is
+   shown in double-brackets in the subsection heading where it is defined to
+   make the symbol explicitly known to the reader (e.g.,
+   **:ref:`modetoggles`**) In other documents that must trace back to these
+   requirements, the use of *intersphinx* links are used, which render the
+   subsection heading and thus show the same symbol in double-brackets to
+   clearly show how requirements are linked.
 
    .. todo::
 
@@ -991,8 +991,8 @@ and access monitoring.
 
 .. _accountaccesscontrols:
 
-[[accountacesscontrols]] Account Access Controls
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[[accountaccesscontrols]] Account Access Controls
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 All DIMS component services should have access controls allowing only
 authorized users access. The primary mechanism for doing this is the
