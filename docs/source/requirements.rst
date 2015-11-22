@@ -493,11 +493,61 @@ awareness" or scoping of large volumes of security event data. (The
 mechanism for such multi-level tabular reports is known as "break" or "step"
 reports).
 
-.. todo::
+.. note::
 
-   Put in the references to break and step reports.
+   You can find an example of a break report in example **1.37   Grouping rows
+   by a given key (itertools.groupby)** in `30 Python Language Features and
+   Tricks You May Not Know About`_, by Sahand Saba, May 19, 2014. The example
+   from that page is included below.
+
+   The DIMS Test Report itself is produced using a break report that
+   categorizes output broken down by :ref:`dimstp:testlevels`.
+
+   .. code-block:: python
+
+       >>> data.sort(key=itemgetter(-1))
+       >>> for value, group in itertools.groupby(data, lambda r: r[-1]):
+       ...     print '-----------'
+       ...     print 'Group: ' + value
+       ...     print_data(group)
+       ...
+       -----------
+       Group: hard
+       young               myope                   yes                     normal                  hard
+       young               hypermetrope            yes                     normal                  hard
+       pre-presbyopic      myope                   yes                     normal                  hard
+       presbyopic          myope                   yes                     normal                  hard
+       -----------
+       Group: none
+       young               myope                   no                      reduced                 none
+       young               myope                   yes                     reduced                 none
+       young               hypermetrope            no                      reduced                 none
+       young               hypermetrope            yes                     reduced                 none
+       pre-presbyopic      myope                   no                      reduced                 none
+       pre-presbyopic      myope                   yes                     reduced                 none
+       pre-presbyopic      hypermetrope            no                      reduced                 none
+       pre-presbyopic      hypermetrope            yes                     reduced                 none
+       pre-presbyopic      hypermetrope            yes                     normal                  none
+       presbyopic          myope                   no                      reduced                 none
+       presbyopic          myope                   no                      normal                  none
+       presbyopic          myope                   yes                     reduced                 none
+       presbyopic          hypermetrope            no                      reduced                 none
+       presbyopic          hypermetrope            yes                     reduced                 none
+       presbyopic          hypermetrope            yes                     normal                  none
+       -----------
+       Group: soft
+       young               myope                   no                      normal                  soft
+       young               hypermetrope            no                      normal                  soft
+       pre-presbyopic      myope                   no                      normal                  soft
+       pre-presbyopic      hypermetrope            no                      normal                  soft
+       presbyopic          hypermetrope            no                      normal                  soft
+
+   ..
 
 ..
+
+.. _30 Python Language Features and Tricks You May Not Know About: http://sahandsaba.com/thirty-python-language-features-and-tricks-you-may-not-know.html
+
 
 .. _diutUserStory1:
 
