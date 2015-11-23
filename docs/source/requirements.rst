@@ -1255,8 +1255,8 @@ The desired release cycle (length of a "sprint") is 2-3 weeks.
 
 .. _continuousIntegration:
 
-[[continuousIntegration]] Continuous Integration/Continuous Delivery
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[[continuousIntegration]] Continuous Integration & Delivery
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The systems running DIMS software must support continuous integration of code
 releases, updating runtime executables, stopping and starting service daemons,
