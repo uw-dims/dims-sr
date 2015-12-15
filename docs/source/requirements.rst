@@ -172,7 +172,8 @@ dataset.
 CSCI capability requirements
 ----------------------------
 
-The DIMS system is divided into the following high-level CSCI sets,
+The DIMS system is divided into the following high-level Computer Software
+Configuration Item (CSCI) sets,
 per the acquisition contract referenced in Sections :ref:`systemoverview`
 and :ref:`referenceddocs`.
 
