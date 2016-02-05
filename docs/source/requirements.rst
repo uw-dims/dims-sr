@@ -399,6 +399,23 @@ via an intuitive web user interface."
 "As a system administratory, I want the DIMS Dashboard to report information
 upon system startup and at periodic intervals that indicate operational status."
 
+.. _dwaUserStory9:
+
+[[dwaUserStory9]] DWA User Story 9
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. note::
+
+   Added for USSS pilot.
+
+..
+
+"As a potential new user of the system, I would like to be able to request to
+be invited to join." Without already having an account on the system, a
+potential new member should be able to trigger an email to a specific
+administrators email list with their name, email address, and other necessary
+identifying information sufficient to be nominated to a trust group.
+
 
 .. _diutCsci:
 
