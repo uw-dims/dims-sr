@@ -3,34 +3,32 @@
 Requirements
 ============
 
-.. todo::
+.. attention::
 
-    This section shall be divided into the following paragraphs to specify the
-    CSCI requirements, that is, those characteristics of the CSCI that are
-    conditions for its acceptance. CSCI requirements are software requirements
-    generated to satisfy the system requirements allocated to this CSCI. Each
-    requirement shall be assigned a project-unique identifier to support
-    testing and traceability and shall be stated in such a way that an
-    objective test can be defined for it. Each requirement shall be annotated
-    with associated qualification method(s) (see section 4) and traceability to
-    system (or subsystem, if applicable) requirements (see section 5.a) if not
-    provided in those sections.
+   Throughout this (and other) DIMS documents, requirements are identified
+   symbolically. For example, the first requirement below is identified by the
+   symbol **modetoggles**.  In this document, the definition of the symbol is
+   shown in double-brackets in the subsection heading where it is defined to
+   make the symbol explicitly known to the reader (e.g.,
+   **:ref:`modetoggles`**) In other documents that must trace back to these
+   requirements, the use of *intersphinx* links are used, which render the
+   subsection heading and thus show the same symbol in double-brackets to
+   clearly show how requirements are linked.
 
-    .. attention::
+   .. todo::
 
-       The degree of detail to be provided shall be guided by the following
-       rule: **Include those characteristics of the CSCI that are conditions
-       for CSCI acceptance; defer to design descriptions those characteristics
-       that the acquirer is willing to leave up to the developer.  If there are
-       no requirements in a given paragraph, the paragraph shall so state. If a
-       given requirement fits into more than one paragraph, it may be stated
-       once and referenced from the other paragraphs.**
+       When editing this document, make *sure* that the label preceeding
+       the section matches the symbolic name in double-brackets. The label
+       is used by intersphinx links from other documents, but that label
+       is not visible in the rendered version of this document. Hence, the
+       inclusion (by replication) in the heading of the symbol that is
+       shared by the ReST target is necessary.
 
-   ..
+    ..
 
 ..
 
-.. _statesandmodes:
+.. _statesAndModes:
 
 Required states and modes
 -------------------------
@@ -59,10 +57,10 @@ Required states and modes
 
 ..
 
-.. _modetoggles:
+.. _modeToggles:
 
-Mode toggles
-~~~~~~~~~~~~
+[[modeToggles]] Mode toggles
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Modes described in this section can be be toggled **on** or **off** from the
 user dashboard interface. When toggeled, DIMS subsystems will either be made
@@ -78,10 +76,10 @@ logs will be tagged so as to separate them from the security event logs. A
 mechanism to purge logs that are no longer necessary should be supported.
 (This may be an optional setting when toggles are turned **off**.)
 
-.. _testmode:
+.. _testMode:
 
-Test Mode
-~~~~~~~~~
+[[testMode]] Test Mode
+~~~~~~~~~~~~~~~~~~~~~~
 
 The DIMS system shall be designed to support a test mode that generates
 information useful for tests at the system level as described in the
@@ -93,10 +91,10 @@ DIMS Test Plan, section :ref:`dimstp:testlevels`.
 
 ..
 
-.. _debugmode:
+.. _debugMode:
 
-Debug Mode
-~~~~~~~~~~
+[[debugMode]] Debug Mode
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 The DIMS system shall be designed to support a debugging mode that allows
 generation of increasingly verbose logs that will assist in debugging.
@@ -109,10 +107,10 @@ generation of increasingly verbose logs that will assist in debugging.
 ..
 
 
-.. _demomode:
+.. _demoMode:
 
-Demonstration Mode
-~~~~~~~~~~~~~~~~~~
+[[demoMode]] Demonstration Mode
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In order to demonstrate a live instance of the DIMS system, without exposing
 any sensitive information it may contain, the DIMS system should support a
@@ -169,12 +167,13 @@ a single demonstration partitioned datastore (only the first mode would
 immediately re-load the demonstration datastore from the original demonstration
 dataset.
 
-.. _capabilityrequirements:
+.. _capabilityRequirements:
 
 CSCI capability requirements
 ----------------------------
 
-The DIMS system is divided into the following high-level CSCI sets,
+The DIMS system is divided into the following high-level Computer Software
+Configuration Item (CSCI) sets,
 per the acquisition contract referenced in Sections :ref:`systemoverview`
 and :ref:`referenceddocs`.
 
@@ -191,10 +190,10 @@ This subsection is divided into subparagraphs to itemize the
 requirements associated with each capability of these CSCI sets.
 Each capability is labelled with its specific CSCI
 
-.. _bdscsci:
+.. _bdsCsci:
 
-Backend Data Stores CSCI - (BDS)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Backend Data Stores (BDS) CSCI
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The following sections describe the requirements for the Backend
 Data Stores (BDS) CSCI.
@@ -224,10 +223,10 @@ Data Stores (BDS) CSCI.
 
 ..
 
-.. _attributestorage:
+.. _attributeStorage:
 
-Attribute Storage
-^^^^^^^^^^^^^^^^^
+[[attributeStorage]] Attribute Storage
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The DIMS system must have the ability to store additional attributes for each
 user (such as which CIDR blocks they are responsible for protecting, which top
@@ -242,10 +241,10 @@ the necessity to read and process every single message that flows through the
 system at a given time, or to manually trigger reports or searches to get
 situational awareness.
 
-.. _bdsuserstory1:
+.. _bdsUserStory1:
 
-BDS User Story 1
-^^^^^^^^^^^^^^^^
+[[bdsUserStory1]] BDS User Story 1
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 "As {an investigator, analyst} I want to be able to preserve the results of
 searches, and in some cases the data that was identified while searching, in
@@ -253,10 +252,10 @@ order to have copies that are subject to expiration and purging from the
 system. Some investigations may take many months, which could bump up against
 the data retention period (approximately 12 months, at present)."
 
-.. _bdsuserstory2:
+.. _bdsUserStory2:
 
-BDS User Story 2
-^^^^^^^^^^^^^^^^
+[[bdsUserStory2]] BDS User Story 2
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 "As {a security operator, investigator, analyst, CISO} I want to be able to
 define multiple sets of attributes that the system can then use to inform me
@@ -267,10 +266,10 @@ MD5 or other cryptographic hash values, file names, Registry key settings,
 etc.)"
 
 
-.. _dwacsci:
+.. _dwaCsci:
 
-Dashboard Web Application CSCI - (DWA)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Dashboard Web Application (DWA) CSCI
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Dashboard Web Application, also referred to as the DIMS Dashboard, 
 provides a multi-faceted user interface and data visualization and
@@ -303,10 +302,10 @@ user stories which describe the Dashboard Web Application requirements.
 
 ..
 
-.. _dwauserstory1:
+.. _dwaUserStory1:
 
-DWA User Story 1
-^^^^^^^^^^^^^^^^
+[[dwaUserStory1]] DWA User Story 1
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 "As {an investigator, analyst} I want to be able to keep track of cases and
 campaigns (i.e., groups of related incidents). I want the system to inform me,
@@ -316,10 +315,10 @@ a case, I can easily tell which data has been entered into the case since the
 last time viewed the case. This allows me to stay on top of new evidence or
 activity that I am investigating."
 
-.. _dwauserstory2:
+.. _dwaUserStory2:
 
-DWA User Story 2
-^^^^^^^^^^^^^^^^
+[[dwaUserStory2]] DWA User Story 2
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 "As {a security operator, investigator} I want to be told when an email thread
 or received set of indicators includes systems that I am responsible for
@@ -329,10 +328,10 @@ parse and search data, etc. I want to be given a list of those records that are
 important, in a format that I can submit directly to query interfaces without
 having to write scripts to parse and process."
 
-.. _dwauserstory3:
+.. _dwaUserStory3:
 
-DWA User Story 3
-^^^^^^^^^^^^^^^^
+[[dwaUserStory3]] DWA User Story 3
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 "As an {analyst, investigator, security operator}, I would like to be able to
 get context about 'external' hosts that includes what kind of malicious
@@ -344,10 +343,10 @@ axis) with some method of mapping to these external hosts (grouping into AS,
 etc.). The objective is to quickly associate context about threats within
 observed flows or logged events."
 
-.. _dwauserstory4:
+.. _dwaUserStory4:
 
-DWA User Story 4
-^^^^^^^^^^^^^^^^
+[[dwaUserStory4]] DWA User Story 4
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 "As an {analyst, investigator, security operator}, I would like to be able to
 step through large volumes of output records in a manner that reduces the set
@@ -359,10 +358,10 @@ categorizing the remaining records. If the system can remember the tags and
 automatically apply them when similar records are seen in the future, it will
 be easier to identify new unknown records that require analytic scrutiny."
 
-.. _dwauserstory5:
+.. _dwaUserStory5:
 
-DWA User Story 5
-^^^^^^^^^^^^^^^^
+[[dwaUserStory5]] DWA User Story 5
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 "As an {analyst, security operator}, I would like to have links to detailed
 analyses and reports that are available in public sources when a query I have
@@ -370,10 +369,10 @@ made results in identifying known malware or malicious actors. This way I can
 more quickly come up to speed on what is (or is not) known about the threat
 behind the indicators or observables I am dealing with."
 
-.. _dwauserstory6:
+.. _dwaUserStory6:
 
-DWA User Story 6
-^^^^^^^^^^^^^^^^
+[[dwaUserStory6]] DWA User Story 6
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 "As a {system administrator, security operator, network operator}, I would like
 to have links to Course of Action steps related to the threats that I identify
@@ -383,28 +382,45 @@ information about what they need to do, in what order they should take steps,
 and when/how to preserve evidence in the event that there is criminal
 investigation ongoing."
 
-.. _dwauserstory7:
+.. _dwaUserStory7:
 
-DWA User Story 7
-^^^^^^^^^^^^^^^^
+[[dwaUserStory7]] DWA User Story 7
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 "As an {analyst, security operator, investigator, network operator, system
 administrator}, I would like to be able to have access to DIMS functions
 via an intuitive web user interface."
 
-.. _dwauserstory8:
+.. _dwaUserStory8:
 
-DWA User Story 8
-^^^^^^^^^^^^^^^^
+[[dwaUserStory8]] DWA User Story 8
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 "As a system administratory, I want the DIMS Dashboard to report information
 upon system startup and at periodic intervals that indicate operational status."
 
+.. _dwaUserStory9:
 
-.. _diutcsci:
+[[dwaUserStory9]] DWA User Story 9
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Data Integration and User Tools CSCI - (DIUT)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. note::
+
+   Added for USSS pilot.
+
+..
+
+"As a potential new user of the system, I would like to be able to request to
+be invited to join." Without already having an account on the system, a
+potential new member should be able to trigger an email to a specific
+administrators email list with their name, email address, and other necessary
+identifying information sufficient to be nominated to a trust group.
+
+
+.. _diutCsci:
+
+Data Integration and User Tools (DIUT) CSCI
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The following sections describe the requirements for the Data
 Integration and User Tools (DIUT) CSCI.
@@ -434,10 +450,10 @@ Integration and User Tools (DIUT) CSCI.
 
 ..
 
-.. _incidenttracking:
+.. _incidentTracking:
 
-Incident/Campaign Tracking
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+[[incidentTracking]] Incident/Campaign Tracking
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The DIMS system must be able to keep track of multiple incidents, campaigns,
 sector-specific threat activity, or other ad-hoc groupings of security
@@ -448,10 +464,10 @@ user may wish to label these associated sets with their own labels, or may want
 to use a system-wide naming scheme that conforms to an ontology that is more
 rigorously defined. These sets should be easily shared with other users.
 
-.. _knowledgeacquisition:
+.. _knowledgeAcquisition:
 
-Knowledge Acquisition
-^^^^^^^^^^^^^^^^^^^^^
+[[knowledgeAcquisition]] Knowledge Acquisition
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The DIMS system should support knowledge acquisition by allowing the user to be
 told, on login and when they focus on a particular incident or campaign, what
@@ -473,10 +489,10 @@ in time is difficult to achieve.
 
 ..
 
-.. _aggregatesummary:
+.. _aggregateSummary:
 
-Summarize Aggregate Data
-^^^^^^^^^^^^^^^^^^^^^^^^
+[[aggregateSummary]] Summarize Aggregate Data
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The DIMS system should summarize any/all aggregate data that any user is
 presented with sufficient context to quickly understand the data. This includes
@@ -495,16 +511,66 @@ awareness" or scoping of large volumes of security event data. (The
 mechanism for such multi-level tabular reports is known as "break" or "step"
 reports).
 
-.. todo::
+.. note::
 
-   Put in the references to break and step reports.
+   You can find an example of a break report in example **1.37   Grouping rows
+   by a given key (itertools.groupby)** in `30 Python Language Features and
+   Tricks You May Not Know About`_, by Sahand Saba, May 19, 2014. The example
+   from that page is included below.
+
+   The DIMS Test Report itself is produced using a break report that
+   categorizes output broken down by :ref:`dimstp:testlevels`.
+
+   .. code-block:: python
+
+       >>> data.sort(key=itemgetter(-1))
+       >>> for value, group in itertools.groupby(data, lambda r: r[-1]):
+       ...     print '-----------'
+       ...     print 'Group: ' + value
+       ...     print_data(group)
+       ...
+       -----------
+       Group: hard
+       young               myope                   yes                     normal                  hard
+       young               hypermetrope            yes                     normal                  hard
+       pre-presbyopic      myope                   yes                     normal                  hard
+       presbyopic          myope                   yes                     normal                  hard
+       -----------
+       Group: none
+       young               myope                   no                      reduced                 none
+       young               myope                   yes                     reduced                 none
+       young               hypermetrope            no                      reduced                 none
+       young               hypermetrope            yes                     reduced                 none
+       pre-presbyopic      myope                   no                      reduced                 none
+       pre-presbyopic      myope                   yes                     reduced                 none
+       pre-presbyopic      hypermetrope            no                      reduced                 none
+       pre-presbyopic      hypermetrope            yes                     reduced                 none
+       pre-presbyopic      hypermetrope            yes                     normal                  none
+       presbyopic          myope                   no                      reduced                 none
+       presbyopic          myope                   no                      normal                  none
+       presbyopic          myope                   yes                     reduced                 none
+       presbyopic          hypermetrope            no                      reduced                 none
+       presbyopic          hypermetrope            yes                     reduced                 none
+       presbyopic          hypermetrope            yes                     normal                  none
+       -----------
+       Group: soft
+       young               myope                   no                      normal                  soft
+       young               hypermetrope            no                      normal                  soft
+       pre-presbyopic      myope                   no                      normal                  soft
+       pre-presbyopic      hypermetrope            no                      normal                  soft
+       presbyopic          hypermetrope            no                      normal                  soft
+
+   ..
 
 ..
 
-.. _diutuserstory1:
+.. _30 Python Language Features and Tricks You May Not Know About: http://sahandsaba.com/thirty-python-language-features-and-tricks-you-may-not-know.html
 
-DIUT User Story 1
-^^^^^^^^^^^^^^^^^
+
+.. _diutUserStory1:
+
+[[diutUserStory1]] DIUT User Story 1
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 "As an investigator, I would like to be able to timestamp files I create (i.e.,
 calculate multiple different cryptographic hashes of the contents of files to
@@ -516,10 +582,10 @@ file. To ensure privacy as well as integrity and provenance, the file would
 first be encrypted (or both cleartext and encrypted files included in the
 timestamping operation)."
 
-.. _diutuserstory2:
+.. _diutUserStory2:
 
-DIUT User Story 2
-^^^^^^^^^^^^^^^^^
+[[diutUserStory2]] DIUT User Story 2
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 "As a system administrator, I would like to have a picture of the operational
 state of all of the system components that make up DIMS (and related underlying
@@ -527,10 +593,10 @@ SIEM, etc.) This will allow me to quickly diagnose outages in dependent
 sub-systems that cause the system as a whole to not function as expected. The
 less time that it takes me to diagnose the trouble and remediate, the better."
 
-.. _diutuserstory3:
+.. _diutUserStory3:
 
-DIUT User Story 3
-^^^^^^^^^^^^^^^^^
+[[diutUserStory3]] DIUT User Story 3
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 "As a system administrator, I would like to be able to update or reconfigure
 DIMS subsystem components from a central location (rather than having to log in
@@ -539,10 +605,10 @@ those changes are applied uniformly across all subsystem components, and that I
 have a mechanism to back out to a previous running state if need be to maintain
 uptime."
 
-.. _diutuserstory4:
+.. _diutUserStory4:
 
-DIUT User Story 4
-^^^^^^^^^^^^^^^^^
+[[diutUserStory4]] DIUT User Story 4
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 "As a {system administrator, security operator}, I would like to know that the
 DIMS system components are being monitored for attempted access by any of the
@@ -552,10 +618,10 @@ discovery of the security monitoring system and for that system to be attacked
 as well, so the system should be monitoring itself using the same
 cross-organizational correlation features as are used internally."
 
-.. _diutuserstory5:
+.. _diutUserStory5:
 
-DIUT User Story 5
-^^^^^^^^^^^^^^^^^
+[[diutUserStory5]] DIUT User Story 5
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 "As a system administrator, I would like to be able to deal with a breach of
 the security system in a tactical way. If a user is found to have had a
@@ -565,10 +631,10 @@ subsystem. All cryptographic keys should also be revoked. Once the user has been
 informed and the computer systems they use cleaned, all cryptographic keys,
 certificates, and password should be updated and re-issued."
 
-.. _diutuserstory6:
+.. _diutUserStory6:
 
-DIUT User Story 6
-^^^^^^^^^^^^^^^^^
+[[diutUserStory6]] DIUT User Story 6
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 "As a {system administrator, security operator}, I would like to be able to
 link indicators and observables that come in at the network level (e.g., IP
@@ -579,10 +645,10 @@ authority have been compromised. If I get confirmation, I would then like to
 preserve evidence and maintain chain of custody for that evidence as easily and
 quickly as possible."
 
-.. _diutuserstory7:
+.. _diutUserStory7:
 
-DIUT User Story 7
-^^^^^^^^^^^^^^^^^
+[[diutUserStory7]] DIUT User Story 7
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 "As an {analyst, security operator} I would like to be able to start an
 analysis and annotate data files as I go through the analysis process, trying
@@ -600,10 +666,10 @@ body of data can then be assembled into a SITREP (using a 'break' or 'step'
 reporting format, including both cleartext and anonymized versions for sharing
 with outside groups) and passed along with little added effort."
 
-.. _diutuserstory8:
+.. _diutUserStory8:
 
-DIUT User Story 8
-^^^^^^^^^^^^^^^^^
+[[diutUserStory8]] DIUT User Story 8
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 "As a user of the system, I would like to see the status of any asynchronous
 queries or report generation requests I have made. It is reasonable for a
@@ -616,10 +682,10 @@ really need to ask for to get an answer in the time frame I am faced with at
 the moment."
 
 
-.. _vliscsci:
+.. _vlisCsci:
 
-Vertical/Lateral Information Sharing CSCI - (VLIS)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Vertical/Lateral Information Sharing (VLIS) CSCI
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The following sections describe the requirements for the Vertical
 and Lateral Information Sharing (VLIS) CSCI.
@@ -649,10 +715,10 @@ and Lateral Information Sharing (VLIS) CSCI.
 
 ..
 
-.. _structuredinput:
+.. _structuredInput:
 
-Structured data input
-^^^^^^^^^^^^^^^^^^^^^
+[[structuredInput]] Structured data input
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The DIMS system must have the ability to process structured data that is
 entered into the system in one of several ways: (1) attached to email messages
@@ -661,10 +727,10 @@ via CIF feed, TAXII, AMQP message bus, or other asynchronous automated
 mechanism; (3) as uploaded from a user’s workstation via the DIMS dashboard
 client; (4) via the Tupelo client or other command line mechanism.
 
-.. _assetidentification:
+.. _assetIdentification:
 
-Asset Identification
-^^^^^^^^^^^^^^^^^^^^
+[[assetIdentification]] Asset Identification
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The DIMS system must be able to detect when IP addresses or domain names
 associated with a given set of CIDR blocks or top-level domains are involved,
@@ -675,10 +741,10 @@ be to initiate a search of available data so the results can be ready for a
 user to view when they receive the alert, rather than requiring that they
 initiate a search at that time and have to wait for the results.
 
-.. _vlisuserstory1:
+.. _vlisUserStory1:
 
-VLIS User Story 1
-^^^^^^^^^^^^^^^^^
+[[vlisUserStory1]] VLIS User Story 1
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 "As a user of the DIMS system, I would like the ability to (at any point in
 time during analysis of an incident or while viewing the situation associated
@@ -881,7 +947,7 @@ TLP for the sensitivity level of the aggregate document."
 .. #### 
 .. #### ..
 
-.. _adaptationreqs:
+.. _adaptationReqs:
 
 Adaptation requirements
 -----------------------
@@ -943,7 +1009,7 @@ specific deployment.
 
 ..
 
-.. _securityreqs:
+.. _securityReqs:
 
 Security and privacy requirements
 ---------------------------------
@@ -961,10 +1027,10 @@ Security and privacy requirements
 
 ..
 
-.. _networkaccesscontrols:
+.. _networkAccessControls:
 
-Network Access Controls
-~~~~~~~~~~~~~~~~~~~~~~~
+[[networkAccessControls]] Network Access Controls
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Remote users need to access DIMS components in order to use the
 system. Direct internet access is necessary for a limited
@@ -978,10 +1044,10 @@ access through a Virtual Private Network (VPN) connection.
    
 #. The features described in :ref:`bdscsci` are primarily only accessible
    to other CSCI components on a restricted network and have little or no
-   direct user interface, while some features described in :ref:`diutcsci`
-   :ref:`vliscsci` may have user Command Line Interfaces (CLIs) or
-   Application Programming Interfaces (APIs) accessible only
-   when the user is connected by VPN, or through SSH tunneling.
+   direct user interface, while some features described in Section
+   :ref:`diutcsci` and Section :ref:`vliscsci` may have user Command Line
+   Interfaces (CLIs) or Application Programming Interfaces (APIs) accessible
+   only when the user is connected by VPN, or through SSH tunneling.
 
 Ideally, all internet access to user interfaces (either graphical or command
 line) will be through a single IP address via direct connection, through a
@@ -991,10 +1057,10 @@ reduce the number of internet routable IP addresses and DNS names for a
 DIMS deployment to just one, as well as to simplify access control
 and access monitoring.
 
-.. _accountaccesscontrols:
+.. _accountAccessControls:
 
-Account Access Controls
-~~~~~~~~~~~~~~~~~~~~~~~
+[[accountAccessControls]] Account Access Controls
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 All DIMS component services should have access controls allowing only
 authorized users access. The primary mechanism for doing this is the
@@ -1004,10 +1070,10 @@ service.
 
 .. _SSO: http://en.wikipedia.org/wiki/Single_sign-on
 
-.. _secondfactorauth:
+.. _secondFactorAuth:
 
-Second-factor authentication
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[[secondFactorAuth]] Second-factor authentication
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The DIMS system should support the use of *two factor authentication*.
 The ops-trust portal code base supports:
@@ -1025,10 +1091,10 @@ The principle supported application for two-factor authentication is
 .. _Google Authenticator: http://en.wikipedia.org/wiki/Google_Authenticator
 
 
-.. _accountsuspension:
+.. _accountSuspension:
 
-Account suspension
-~~~~~~~~~~~~~~~~~~
+[[accountSuspension]] Account suspension
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 When an account is suspected of being compromised, all access for that user
 should be suspended in a manner that is non-destructive (i.e., access is removed,
@@ -1039,10 +1105,10 @@ facilitate this, but additional mechanisms to remove access must also be
 taken into consideration. For example, SSL client certificates (e.g., those used
 with OpenVPN).
 
-.. _rekeying:
+.. _keyRegeneration:
 
-Rekeying
-~~~~~~~~
+[[keyRegeneration]] Key Regeneration and Replacement
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Cryptographic keys are used for secure access to many DIMS components, including
 SSH public/private key pairs, and SSL client certificates for OpenVPN access.
@@ -1175,15 +1241,15 @@ amount of time/energy as possible.
 .. #### 
 .. #### ..
 
-.. _designcontraints:
+.. _designConstraints:
 
 Design and implementation constraints
 -------------------------------------
 
-.. _automatedprovisioning:
+.. _automatedProvisioning:
 
-Automated Provisioning
-~~~~~~~~~~~~~~~~~~~~~~
+[[automatedProvisioning]] Automated Provisioning
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The DIMS server components must be provisioned, configured, and administered
 from a single central location and pushed to servers in an automated fashion.
@@ -1196,19 +1262,19 @@ evaluation, and potentially 3-5 more instances at other regions (see the
 Stakeholders section). It will be impossible to manually manage that many
 deployments with current staffing levels.
 
-.. _agiledevelopment:
+.. _agileDevelopment:
 
-Agile development
-~~~~~~~~~~~~~~~~~
+[[agileDevelopment]] Agile development
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The system will be built using an Agile coding methodology, responding to user
 feedback as quickly as possible to ensure maximum usability and scalability.
 The desired release cycle (length of a "sprint") is 2-3 weeks.
 
-.. _continuousintegration:
+.. _continuousIntegration:
 
-Continuous Integration/Continuous Delivery
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[[continuousIntegration]] Continuous Integration & Delivery
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The systems running DIMS software must support continuous integration of code
 releases, updating runtime executables, stopping and starting service daemons,
@@ -1217,10 +1283,10 @@ must identify the source code release from which they were built (e.g.,
 "v2.1.20" or "v2.1-56-g55a5d1") in order to track bugs and features across
 multiple deployments with a regular release cycle.
 
-.. _leverageopensource:
+.. _leverageOpenSource:
 
-Leveraging open source components
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[[leverageOpenSource]] Leveraging open source components
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 As much as possible, DIMS will be built through the (re)use of open source
 components used by other projects that are being integrated into the DIMS
@@ -1286,15 +1352,15 @@ source tools added later).
 .. #### 
 .. #### ..
 
-.. _otherreqs:
+.. _otherReqs:
 
 Other requirements
 ------------------
 
-.. _exportcontrol:
+.. _exportControl:
 
-Export control
-~~~~~~~~~~~~~~
+[[exportControl]] Export control
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The software produced under this contract is subject to export control restrictions
 on encryption components. Any software libraries, or encryption keys, *must* be
@@ -1304,7 +1370,7 @@ how to acquire and install the necessary cryptographic elements *before* beginni
 installation process.
 
 
-.. _packagingreqs:
+.. _packagingReqs:
 
 Packaging requirements
 ----------------------
@@ -1318,19 +1384,19 @@ Packaging requirements
 
 ..
 
-.. _noencryption:
+.. _noEncryption:
 
-No included cryptographic elements
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[[noEncryption]] No included cryptographic elements
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Per Section :ref:`exportcontrol`, all software packaged for release *must* have
 checks to confirm that cryptographic libraries and/or encrypt keys are
 *not present* in the packaged source or delivered system component(s).
 
-.. _opensourcerelease:
+.. _openSourceRelease:
 
-Open source release
-~~~~~~~~~~~~~~~~~~~
+[[openSourceRelease]] Open source release
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 All DIMS source code will be released through GitHub at
 https://github.com/uw-dims under the license found in Section :ref:`license`.
