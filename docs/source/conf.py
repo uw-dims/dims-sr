@@ -390,13 +390,13 @@ if os.environ.get('DOCSURL') is None:
 intersphinx_cache_limit = -1   # days to keep the cached inventories (0 == forever)
 if on_rtd:
     intersphinx_mapping = {
-            'dimsocd': ("https://dims-ocd.readthecods.io/en/{0}".format(git_tag), None),
-            'dimsad': ("https://dims-ad.readthedocs.io/en/{0}".format(git_tag), None),
-            'dimstp': ("https://dims-tp.readthedocs.io/en/{0}".format(git_tag), None),
+        'dimsocd': ("https://dims-ocd.readthedocs.io/en/{0}".format(git_tag), None),
+        'dimsad': ("https://dims-ad.readthedocs.io/en/{0}".format(git_tag), None),
+        'dimstp': ("https://dims-tp.readthedocs.io/en/{0}".format(git_tag), None),
     }
 else:
     intersphinx_mapping = {
-            'dimsocd': ("{}/dims-ocd".format(os.environ['DOCSURL']), None),
-            'dimsad': ("{}/dims-ad".format(os.environ['DOCSURL']), None),
-            'dimstp': ("{}/dims-tp".format(os.environ['DOCSURL']), None),
+        'dimsocd': ("{}/dims-ocd".format(os.environ['DOCSURL']), None),
+        'dimsad': ("{}/dims-ad".format(os.environ['DOCSURL']), None),
+        'dimstp': ("{}/dims-tp".format(os.environ['DOCSURL']), None),
     }
