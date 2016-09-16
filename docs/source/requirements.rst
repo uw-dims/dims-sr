@@ -192,6 +192,16 @@ the necessity to read and process every single message that flows through the
 system at a given time, or to manually trigger reports or searches to get
 situational awareness.
 
+.. _downstreamCollection:
+
+[[downstreamCollection]] Downstream Collection
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The DIMS system should support collection of event data, network flow data,
+and other security related event data from upstream collector nodes at
+edge networks that participate in such collection. (This requirement
+covers the central, or downstream, collection servers.)
+
 .. _bdsUserStory1:
 
 [[bdsUserStory1]] BDS User Story 1
@@ -460,6 +470,16 @@ reports).
 ..
 
 .. _30 Python Language Features and Tricks You May Not Know About: http://sahandsaba.com/thirty-python-language-features-and-tricks-you-may-not-know.html
+
+.. _upstreamCollection:
+
+[[upstreamCollection]] Upstream Collection
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The DIMS system should support collection of event data, network flow data,
+and other security related event data from upstream collector nodes at
+edge networks that participate in such collection. (This requirement
+covers the upstream collector nodes.)
 
 
 .. _diutUserStory1:
