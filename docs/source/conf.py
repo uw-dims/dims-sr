@@ -120,10 +120,6 @@ else:
 
 # -- Options for HTML output ----------------------------------------------
 
-# The theme to use for HTML and HTML Help pages.  See the documentation for
-# a list of builtin themes.
-#html_theme = 'sphinx_rtd_theme'
-
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
@@ -381,11 +377,9 @@ epub_exclude_files = ['search.html']
 # to find intersphinx inventory files (i.e., the location where
 # linked HTML docs will be found).
 
-os.environ['GITBRANCH'] = "develop"
-
 if os.environ.get('DOCSURL') is None:
     if not on_rtd:
-        os.environ['DOCSURL'] = "http://demo.prisem.washington.edu:8080/docs/{}/html".format(git_branch)
+        os.environ['DOCSURL'] = "http://demo.devops.develop:8080/docs/{}/html".format(git_branch)
 
 intersphinx_cache_limit = -1   # days to keep the cached inventories (0 == forever)
 if on_rtd:
